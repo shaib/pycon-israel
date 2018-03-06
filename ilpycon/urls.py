@@ -16,7 +16,7 @@ WIKI_SLUG = r"(([\w-]{2,})(/[\w-]{2,})*)"
 urlpatterns = [
     path("", TemplateView.as_view(template_name="homepage.html"), name="home"),
     path("admin/", admin.site.urls),
-    path("i18n/", include('django.conf.urls.i18n')),
+    path("i18n/", include('ilpycon.i18n')),
     path("account/", include("account.urls")),
 
     path("dashboard/", dashboard, name="dashboard"),
