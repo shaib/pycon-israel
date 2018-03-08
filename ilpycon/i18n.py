@@ -23,7 +23,7 @@ def translate_url(url, lang_code):
     for code,_ in settings.LANGUAGES:
         prefix = '/{code}/'.format(locals())
         if prefix in url:
-            return url.replace(prefix, '/{lang_code}/'.format(locals())
+            return url.replace(prefix, '/{lang_code}/'.format(locals()))
     # No language prefix found
     return url
 
