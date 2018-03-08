@@ -21,9 +21,9 @@ from django.views.i18n import LANGUAGE_QUERY_PARAMETER
 def translate_url(url, lang_code):
     # Inaccurate and dirty but will work for now
     for code,_ in settings.LANGUAGES:
-        prefix = f'/{code}/'
+        prefix = '/{code}/'.format(locals())
         if prefix in url:
-            return url.replace(prefix, f'/{lang_code}/')
+            return url.replace(prefix, '/{lang_code}/'.format(locals())
     # No language prefix found
     return url
 
