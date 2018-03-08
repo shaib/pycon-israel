@@ -1,0 +1,151 @@
+  body {
+    margin: 0px;
+    color: #333333;
+  }
+  header {
+    height: 430px;
+    background-color: #deeaf8;
+  }
+
+  #city {
+    background-image: url( "../images/city.png");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    height: 430px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+  }
+
+  .headerInnerPage {
+    background-color: #deeaf8;
+    background-image: url( "../images/innerpage_bg.gif");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    height: 194px;
+  }
+  #logo {
+    background-image: url( "../images/logo_pyconil_2018.png");
+    background-repeat: no-repeat;
+    width: 142px;
+    height: 160px;
+    float: left;
+    margin: 8px;
+    position: absolute;
+    top: 0px;
+  }
+  #logoInnerPage {
+    background-image: url( "../images/inner_page_header.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 154px;
+  }
+
+  #banner {
+    background-image: url( "../images/banner_pyconil_2018.png");
+    background-repeat: none;
+    width: 179px;
+    height: 97px;
+    right: 0px;
+    margin: 8px;
+    position: absolute;
+    top: 0px;
+
+  }
+  #nav {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    background-color: #1d76bd;
+    height: 30px;
+  }
+  .navInnerpage, .navbar {
+    top: 164px !important;
+    background: none !important;
+  }
+
+  #nav div{
+    text-align: center;
+    color: white;
+  }
+
+  #surf {
+    position: absolute;
+    background-image: url( "../images/animated_object_1.png");
+    background-repeat: no-repeat;
+    width: 57px;
+    height: 142px;
+    margin-left: 240px;
+    margin-top: 240px;
+    animation-name: surfAni;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes surfAni {
+      0% {
+      transform: rotate(0deg);
+      margin-left: 234px;
+     }
+
+     50% {
+       transform: rotate(5deg);
+       margin-left: 232px;
+     }
+     100% {
+     transform: rotate(0deg);
+     margin-left: 234px;
+    }
+    }
+  .cloud {
+    position: absolute;
+    background-image: url( "../images/animated_object_2.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position-y: 178px;
+    animation-name: cloudAni;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+  }
+  .cloud2 {
+    animation-delay: 7s;
+    background-position-x: -600px;
+    background-position-y: 206px;
+  }
+  @keyframes cloudAni {
+   0% {
+     background-position-x: -600px;
+   }
+
+   100% {
+     background-position-x: 250%;
+   }
+}
+
+  h1 {
+    color: #1d76bd;
+  }
+  h2 {
+    color: #e34f25;
+  }
+
+  @media only screen and (max-width: 500px) {
+    #banner, #animation, #logo, #surf, #cloud, #cloud2  {
+      display: none;
+    }
+    #logoMobile {
+      background-image: url( "../images/inner_page_header.png");
+      background-repeat: none;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 126px;
+    }
+    #logoInnerPage {
+      background-image: url( "../images/inner_page_header.png");
+      background-repeat: none;
+      background-repeat: no-repeat;
+    }
+  }
