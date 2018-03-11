@@ -1,4 +1,5 @@
 *.pyc
+**/LC_MESSAGES/*.mo
 node_modules/
 dev.db
 site_media/

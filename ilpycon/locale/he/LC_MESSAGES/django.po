@@ -1,0 +1,590 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-11 21:44+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: ilpycon/proxy/apps.py:8
+msgid "Proxy"
+msgstr ""
+
+#: ilpycon/settings.py:35
+msgid "English"
+msgstr ""
+
+#: ilpycon/settings.py:36
+msgid "Hebrew"
+msgstr ""
+
+#: ilpycon/templates/_account_bar.html:20
+msgid "Log in"
+msgstr ""
+
+#: ilpycon/templates/_account_bar.html:22
+msgid "Sign up"
+msgstr ""
+
+#: ilpycon/templates/_default_sidebar.html:8
+msgid "Sponsors"
+msgstr "נותני חסות"
+
+#: ilpycon/templates/_footer.html:5
+#, python-format
+msgid ""
+"\n"
+"<div class=\"copyright\">&copy; %(current_year)s PyCon Israel</div>\n"
+"<div class=\"powered-by\">Site Powered by Eldarion's <a href=\"http://"
+"eldarion.com/symposion/\">Symposion</a></div>\n"
+msgstr ""
+
+#: ilpycon/templates/dashboard.html:18
+msgid "Speaking"
+msgstr ""
+
+#: ilpycon/templates/dashboard.html:97
+#: ilpycon/templates/symposion/sponsorship/detail.html:8
+msgid "Sponsorship"
+msgstr ""
+
+#: ilpycon/templates/dashboard.html:136
+#: ilpycon/templates/symposion/reviews/review_detail.html:64
+msgid "Reviews"
+msgstr ""
+
+#: ilpycon/templates/dashboard.html:178
+msgid "Teams"
+msgstr ""
+
+#: ilpycon/templates/homepage_en.html:27 ilpycon/templates/homepage_he.html:24
+#: ilpycon/templates/homepage_old.html:35
+msgid ""
+"\n"
+"                <b>Pinax</b> is an open-source platform based on Django and\n"
+"                intended to provide a starting point for websites. It takes\n"
+"                care of the things that many sites have in common, so you "
+"can\n"
+"                focus on what makes your site different.\n"
+"                "
+msgstr ""
+
+#: ilpycon/templates/homepage_en.html:39 ilpycon/templates/homepage_he.html:36
+#: ilpycon/templates/homepage_old.html:79
+msgid ""
+"\n"
+"                See <a href=\"http://pinaxproject.com/\">pinaxproject.com</"
+"a>\n"
+"                for more information.\n"
+"                "
+msgstr ""
+
+#: ilpycon/templates/homepage_old.html:14
+msgid ""
+"Welcome to<div style=\"font-size: 6rem; font-weight: 600;\">Project Account</"
+"div>"
+msgstr ""
+
+#: ilpycon/templates/homepage_old.html:16
+msgid ""
+"\n"
+"                In addition to what is provided by Project Zero, this "
+"project\n"
+"                provides thorough integration with django-user-accounts, "
+"adding\n"
+"                comprehensive account management functionality. It is a "
+"foundation\n"
+"                suitable for most sites that have user accounts.\n"
+"                "
+msgstr ""
+
+#: ilpycon/templates/homepage_old.html:26
+#, python-format
+msgid ""
+"You can <a href=\"%(login_url)s\" class=\"btn btn-secondary\">Log In</a> or "
+"<a href=\"%(signup_url)s\" class=\"btn btn-primary\">Sign Up</a> to try out "
+"the site."
+msgstr ""
+
+#: ilpycon/templates/homepage_old.html:33
+msgid "What is Pinax?"
+msgstr ""
+
+#: ilpycon/templates/homepage_old.html:47
+msgid ""
+"\n"
+"                        <b>Starter projects</b> provide project layout,\n"
+"                        scaffolding, already integrated components and\n"
+"                        ready-to-go code.\n"
+"                        "
+msgstr ""
+
+#: ilpycon/templates/homepage_old.html:57
+msgid ""
+"\n"
+"                        <b>Reusable apps</b> provide common\n"
+"                        infrastructure, back-end functionality,\n"
+"                        and user-facing components.\n"
+"                        "
+msgstr ""
+
+#: ilpycon/templates/homepage_old.html:67
+msgid ""
+"\n"
+"                        <b>Themes</b> provide default templates and\n"
+"                        stylesheets for quick prototyping and easy "
+"customization.\n"
+"                        "
+msgstr ""
+
+#: ilpycon/templates/pinax/boxes/_box.html:8
+msgid "Edit"
+msgstr ""
+
+#: ilpycon/templates/site_base.html:38
+msgid "Dashboard"
+msgstr ""
+
+#: ilpycon/templates/symposion/cms/page_edit.html:11
+msgid "Edit page at:"
+msgstr ""
+
+#: ilpycon/templates/symposion/conference/user_list.html:57
+msgid "Email"
+msgstr ""
+
+#: ilpycon/templates/symposion/conference/user_list.html:58
+msgid "Name"
+msgstr ""
+
+#: ilpycon/templates/symposion/conference/user_list.html:59
+msgid "Speaker Profile?"
+msgstr ""
+
+#: ilpycon/templates/symposion/emails/proposal_new_message/message.html:5
+#, python-format
+msgid "<b>%(user)s</b> has added a message on <b>%(title)s</b>."
+msgstr ""
+
+#: ilpycon/templates/symposion/emails/proposal_new_message/message.html:12
+#, python-format
+msgid ""
+" Respond online at <a href=\"http://%(current_site)s%(detail_url)s#proposal-"
+"feedback\">http://%(current_site)s%(detail_url)s#proposal-feedback</a>"
+msgstr ""
+
+#: ilpycon/templates/symposion/emails/proposal_new_message/subject.txt:1
+#, python-format
+msgid "New message on \"%(title)s\" from %(user)s"
+msgstr ""
+
+#: ilpycon/templates/symposion/emails/proposal_updated/message.html:5
+#, python-format
+msgid ""
+"<b>%(username)s</b> has made changes to <b>%(title)s</b> which you have "
+"previously reviewed or commented on."
+msgstr ""
+
+#: ilpycon/templates/symposion/emails/proposal_updated/message.html:9
+#, python-format
+msgid ""
+"View the latest version of the proposal online at <a href=\"http://"
+"%(current_site)s%(detail_url)s\">http://%(current_site)s%(detail_url)s</a>"
+msgstr ""
+
+#: ilpycon/templates/symposion/emails/proposal_updated/subject.txt:1
+#, python-format
+msgid "\"%(title)s\" has been updated by %(username)s"
+msgstr ""
+
+#: ilpycon/templates/symposion/emails/speaker_addition/message.html:3
+#, python-format
+msgid ""
+"\n"
+"<p>%(username)s attached you as an additional speaker to a\n"
+"    talk proposal for %(site_name)s entitled \"%(title)s\".</p>\n"
+"\n"
+"<p>For more details, visit the %(site_name)s speaker dashboard:\n"
+"    <a href=\"http://%(current_site)s%(dashboard_url)s\">http://"
+"%(current_site)s{{ dashboard_url ]}</a>\n"
+"</p>\n"
+msgstr ""
+
+#: ilpycon/templates/symposion/emails/speaker_addition/subject.txt:1
+#: ilpycon/templates/symposion/emails/speaker_invite/subject.txt:1
+#: ilpycon/templates/symposion/emails/speaker_no_profile/subject.txt:1
+#, python-format
+msgid "%(name)s has invited you to join as a speaker on %(title)s"
+msgstr ""
+
+#: ilpycon/templates/symposion/emails/speaker_invite/message.html:3
+#, python-format
+msgid ""
+"\n"
+"<p>%(invitator)s attached you as an additional speaker to a\n"
+"    talk proposal for %(site_name)s entitled \"%(title)s\".</p>\n"
+"\n"
+"<p>Go to</p>\n"
+"\n"
+"<p><a href=\"http://%(current_site)s%(token_url)s\">http://%(current_site)s"
+"%(token_url)s</a></p>\n"
+"\n"
+"<p>to confirm.</p>\n"
+"\n"
+"<p>If you don't have account on the website, you will be asked to create one."
+"</p>\n"
+msgstr ""
+
+#: ilpycon/templates/symposion/emails/speaker_no_profile/message.html:3
+#, python-format
+msgid ""
+"\n"
+"<p>%(username)s attached you as an additional speaker to a\n"
+"    talk proposal for %(site_name)s entitled \"%(title)s\".</p>\n"
+"\n"
+"<p>Go to</p>\n"
+"\n"
+"<p><a href=\"http://%(current_site)s%(token_url)s\">http://%(current_site)s"
+"%(token_url)s</a></p>\n"
+"\n"
+"<p>to confirm and fill out your speaker profile.</p>\n"
+msgstr ""
+
+#: ilpycon/templates/symposion/emails/sponsor_signup/message.html:2
+#, python-format
+msgid ""
+"\n"
+"<p>%(sponsor_name)s has applied to be a sponsor.</p>\n"
+"\n"
+"<ul>\n"
+"    <li><b>Applicant</b>: %(applicant)s</li>\n"
+"    <li><b>Sponsor Name</b>: %(sponsor_name)s</li>\n"
+"    <li><b>Sponsor Contact</b>: %(contact)s</li>\n"
+"    <li><b>Sponsor Contact Email</b>: %(email)s</li>\n"
+"    <li><b>Sponsorship Level</b>: %(level)s</li>\n"
+"</ul>\n"
+msgstr ""
+
+#: ilpycon/templates/symposion/emails/sponsor_signup/subject.txt:1
+msgid "New Sponsor Application"
+msgstr ""
+
+#: ilpycon/templates/symposion/emails/teams_user_applied/message.html:3
+#, python-format
+msgid ""
+"\n"
+"    <p>\n"
+"        User \"%(username)s\" has applied to join <b>%(team_name)s</b> on "
+"%(site_name)s.\n"
+"    </p>\n"
+"\n"
+"    <p>\n"
+"        To accept this application and see any other pending applications, "
+"visit the following url:\n"
+"        <a href=\"http://%(site_url)s%(team_url)s\">http://%(site_url)s"
+"%(team_url)s</a>\n"
+"    </p>\n"
+msgstr ""
+
+#: ilpycon/templates/symposion/emails/teams_user_applied/subject.txt:1
+#, python-format
+msgid "%(username)s has applied to to join \"%(team)s\""
+msgstr ""
+
+#: ilpycon/templates/symposion/emails/teams_user_invited/message.html:3
+#, python-format
+msgid ""
+"\n"
+"    <p>\n"
+"        You have been invited to join <b>%(team_name)s</b> on "
+"%(site_name)s.\n"
+"    </p>\n"
+"\n"
+"    <p>\n"
+"        To accept this invitation, visit the following url:\n"
+"        <a href=\"http://%(site_url)s%(team_url)s\">http://%(site_url)s"
+"%(team_url)s</a>\n"
+"    </p>\n"
+msgstr ""
+
+#: ilpycon/templates/symposion/emails/teams_user_invited/subject.txt:1
+#, python-format
+msgid "You have been invited to join \"%(team)s\""
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/_pending_proposal_row.html:12
+#: ilpycon/templates/symposion/proposals/proposal_detail.html:25
+msgid "Cancelled"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/_pending_proposal_row.html:16
+msgid "Accepted"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/_pending_proposal_row.html:18
+msgid "Submitted"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/_pending_proposal_row.html:21
+msgid "Invited"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/_pending_proposal_row.html:30
+msgid "Choose Response"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/_pending_proposal_row.html:35
+msgid "Accept invitation"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/_pending_proposal_row.html:37
+msgid "Decline invitation"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/_proposal_fields.html:4
+msgid "Submitted by"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/_proposal_fields.html:7
+msgid "Track"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/_proposal_fields.html:10
+msgid "Audience Level"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/_proposal_fields.html:14
+msgid "Additional Speakers"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/_proposal_fields.html:21
+msgid "Invitation Sent"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/_proposal_fields.html:28
+msgid "Description"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/_proposal_fields.html:31
+msgid "Abstract"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/_proposal_fields.html:34
+msgid "Notes"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/_proposal_fields.html:37
+msgid "Speaker Bio"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/_proposal_fields.html:40
+msgid "Documents"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/proposal_cancel.html:5
+msgid "Cancel Proposal"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/proposal_cancel.html:14
+msgid "No, keep it for now"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/proposal_detail.html:14
+msgid "Edit this proposal"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/proposal_detail.html:17
+msgid "Cancel this proposal"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/proposal_detail.html:21
+msgid "Remove me from this proposal"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/proposal_detail.html:33
+#: ilpycon/templates/symposion/reviews/review_detail.html:63
+msgid "Proposal Details"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/proposal_detail.html:35
+#: ilpycon/templates/symposion/proposals/proposal_detail.html:47
+msgid "Supporting Documents"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/proposal_detail.html:38
+msgid "Reviewer Feedback"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/proposal_detail.html:57
+msgid "delete"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/proposal_detail.html:64
+msgid "No supporting documents attached to this proposal."
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/proposal_detail.html:66
+msgid "Add Document"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/proposal_detail.html:73
+msgid "Conversation with Reviewers"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/proposal_detail.html:83
+msgid "Leave a Message"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/proposal_detail.html:85
+msgid "You can leave a message for the reviewers here."
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/proposal_detail.html:93
+msgid "Submit"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/proposal_speaker_manage.html:7
+msgid "Proposal:"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/proposal_speaker_manage.html:10
+msgid "Edit proposal"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/proposal_speaker_manage.html:14
+msgid "Current Speakers"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/proposal_speaker_manage.html:20
+msgid "pending invitation"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/proposal_speaker_manage.html:24
+msgid "Add another speaker"
+msgstr ""
+
+#: ilpycon/templates/symposion/proposals/proposal_submit.html:6
+msgid "Submit A Proposal"
+msgstr ""
+
+#: ilpycon/templates/symposion/reviews/_review_table.html:6
+#: ilpycon/templates/symposion/reviews/result_notification.html:45
+msgid "Speaker / Title"
+msgstr ""
+
+#: ilpycon/templates/symposion/reviews/_review_table.html:7
+#: ilpycon/templates/symposion/reviews/result_notification.html:46
+msgid "Category"
+msgstr ""
+
+#: ilpycon/templates/symposion/reviews/_review_table.html:9
+msgid "+1"
+msgstr ""
+
+#: ilpycon/templates/symposion/reviews/_review_table.html:10
+msgid "+0"
+msgstr ""
+
+#: ilpycon/templates/symposion/reviews/_review_table.html:11
+msgid "-0"
+msgstr ""
+
+#: ilpycon/templates/symposion/reviews/_review_table.html:12
+msgid "-1"
+msgstr ""
+
+#: ilpycon/templates/symposion/reviews/_review_table.html:13
+msgid "Your Rating"
+msgstr ""
+
+#: ilpycon/templates/symposion/reviews/base.html:61
+msgid "All Reviews"
+msgstr ""
+
+#: ilpycon/templates/symposion/reviews/base.html:74
+msgid "Voting Status"
+msgstr ""
+
+#: ilpycon/templates/symposion/reviews/result_notification.html:47
+msgid "Status"
+msgstr ""
+
+#: ilpycon/templates/symposion/reviews/result_notification.html:48
+msgid "Notified?"
+msgstr ""
+
+#: ilpycon/templates/symposion/reviews/review_detail.html:65
+msgid "Speaker Feedback"
+msgstr ""
+
+#: ilpycon/templates/symposion/reviews/review_detail.html:73
+msgid "Current Results"
+msgstr ""
+
+#: ilpycon/templates/symposion/reviews/review_detail.html:80
+msgid "Total Responses"
+msgstr ""
+
+#: ilpycon/templates/symposion/reviews/review_detail.html:97
+msgid "Submit Review"
+msgstr ""
+
+#: ilpycon/templates/symposion/reviews/review_detail.html:135
+msgid "Conversation with the submitter"
+msgstr ""
+
+#: ilpycon/templates/symposion/reviews/review_detail.html:149
+msgid "Send a message"
+msgstr ""
+
+#: ilpycon/templates/symposion/reviews/review_detail.html:151
+msgid ""
+"\n"
+"                            If you'd like to communicate with the submitter, "
+"use the following form and he or she will be\n"
+"                            notified and given the opportunity to respond.\n"
+"                        "
+msgstr ""
+
+#: ilpycon/templates/symposion/schedule/_slot_edit.html:5
+msgid "Edit Slot"
+msgstr ""
+
+#: ilpycon/templates/symposion/speakers/speaker_create.html:7
+#: ilpycon/templates/symposion/speakers/speaker_create.html:14
+msgid "Create Speaker Profile"
+msgstr ""
+
+#: ilpycon/templates/symposion/speakers/speaker_edit.html:7
+#: ilpycon/templates/symposion/speakers/speaker_edit.html:14
+msgid "Edit Speaker Profile"
+msgstr ""
+
+#: ilpycon/templates/symposion/sponsorship/add.html:7
+#: ilpycon/templates/symposion/sponsorship/add.html:14
+msgid "Add a Sponsor"
+msgstr ""
+
+#: ilpycon/templates/symposion/sponsorship/apply.html:7
+msgid "Apply to be a Sponsor"
+msgstr ""
+
+#: ilpycon/templates/symposion/sponsorship/apply.html:17
+msgid "Apply to Be a Sponsor"
+msgstr ""
+
+#: ilpycon/templates/symposion/sponsorship/list.html:7
+#: ilpycon/templates/symposion/sponsorship/list.html:12
+msgid "About Our Sponsors"
+msgstr ""

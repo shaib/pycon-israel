@@ -11,6 +11,7 @@ pip install -r requirements.txt
 ./manage.py migrate
 ./manage.py loaddata sites conference sponsor_levels sponsor_benefits proposal_base pages
 ./manage.py sitetree_resync_apps ilpycon
+./manage.py compilemessages
 
 npm run dev
 ```
@@ -25,7 +26,14 @@ After editing static pages from the CMS, export them them into fixtures using th
 ```
 ./manage.py dumpdata --indent 2 pinax_pages >fixtures/pages.json
 ```
+### Adding translations
 
+To (re)create the translation files:
+
+```
+./manage.py makemessages --keep-pot --locale "he"
+#./manage.py makemessages --domain djangojs --keep-pot --locale "he"  # For js (we don't need this yet)
+```
 ## Deploy a branch to Heroku
 
 - Use the `pycon.israel.devops@gmail.com` account to add site collaborators
