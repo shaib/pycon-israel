@@ -1,0 +1,47 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}Pycon Israel 2018{% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+{% block body_base %}
+<main>
+    <section class="jumbotron">
+        <div class="container">
+            {% include "_messages.html" %}
+            <h1>Hello there</h1>
+            <p class="lead">
+                In addition to what is provided by Project Zero, this project
+                provides thorough integration with django-user-accounts, adding
+                comprehensive account management functionality. It is a foundation
+                suitable for most sites that have user accounts.
+            </p>
+        </div>
+    </section>
+    <section id="content-section">
+        <div id="content-body">
+            <h2 class="text-center">Blah</h2>
+            <p class="lead">
+                {% blocktrans %}
+                <b>Pinax</b> is an open-source platform based on Django and
+                intended to provide a starting point for websites. It takes
+                care of the things that many sites have in common, so you can
+                focus on what makes your site different.
+                {% endblocktrans %}
+            </p>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <p class="see-more lead text-center">
+                {% blocktrans %}
+                See <a href="http://pinaxproject.com/">pinaxproject.com</a>
+                for more information.
+                {% endblocktrans %}
+            </p>
+        </div>
+    </section>
+</main>
+{% endblock %}

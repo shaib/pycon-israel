@@ -1,4 +1,5 @@
 from django.conf import settings
+from django.conf.urls.i18n import i18n_patterns
 from django.urls import include, path
 from django.conf.urls.static import static
 from django.views.generic import TemplateView
@@ -13,14 +14,15 @@ from .symposion.views import dashboard
 
 WIKI_SLUG = r"(([\w-]{2,})(/[\w-]{2,})*)"
 
-urlpatterns = [
+urlpatterns = i18n_patterns(
     path("", TemplateView.as_view(template_name="homepage.html"), name="home"),
+)
+
+urlpatterns += [
     path("admin/", admin.site.urls),
     path("i18n/", include('ilpycon.i18n')),
     path("account/", include("account.urls")),
 
-    path("dashboard/", dashboard, name="dashboard"),
-    path("speakers/", include("ilpycon.symposion.speakers.urls")),
     path("proposals/", include("ilpycon.symposion.proposals.urls")),
     path("sponsors/", include("ilpycon.symposion.sponsorship.urls")),
     path("boxes/", include("pinax.boxes.urls")),
@@ -30,6 +32,10 @@ urlpatterns = [
     path("", include("pinax.pages.urls", namespace="pinax_pages"))
 ]
 
+urlpatterns += i18n_patterns(
+    path("speakers/", include("ilpycon.symposion.speakers.urls")),
+    path("dashboard/", dashboard, name="dashboard"),
+)
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
