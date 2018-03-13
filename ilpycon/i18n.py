@@ -8,6 +8,7 @@ import re
 from urllib.parse import unquote, urlparse
 
 from django.conf import settings
+from django.contrib.sites.shortcuts import get_current_site
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import path  #, translate_url
 from django.utils.http import is_safe_url
@@ -27,6 +28,13 @@ def translate_url(url, lang_code):
     return url
 
 
+def site_host(request):
+    # this is required for proxied sites
+    site = get_current_site(request)
+    # site.domain can include a path prefix
+    return site.domain.split('/')[0]
+
+
 def set_language(request):
     """
     Redirect to a given URL while setting the chosen language in the session or
@@ -38,8 +46,8 @@ def set_language(request):
     redirect to the page in the request (the 'next' parameter) without changing
     any state.
     """
-    # Support correct allowed_hosts under dev env
-    good_hosts = {request.get_host()}
+    # Support correct allowed_hosts under dev env and under proxy
+    good_hosts = {request.get_host(), site_host(request)}
     next = request.POST.get('next', request.GET.get('next'))
     if ((next or not request.is_ajax()) and
             not is_safe_url(url=next, allowed_hosts=good_hosts, require_https=request.is_secure())):
