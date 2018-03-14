@@ -19,12 +19,15 @@
 {% block body_extra_attributes %}{% if LANGUAGE_BIDI %}dir="rtl"{% endif %}{% endblock %}
 
 {% block topbar_base %}
-    
-<header {% block extra_header_class %}class="headerInnerPage"{% endblock %}>
-    <div class="navbar {% block navbar_class %}navbar-expand-lg navbar-light{% endblock %}">
+
+<div {% block extra_header_class %}class="headerInnerPage"{% endblock %}>
+  <!--BEGIN this should be added only in inner pages-->
+  <!--  <div id="logoInnerPage"></div>-->
+  <!--END-->
+    <div class="navbar {% block navbar_class %}navbar-expand-lg navbar-eldan{% endblock %}">
         <div class="container">
         {% block topbar %}
-            {% block site_brand %}<a class="navbar-brand" href="{% url "home" %}">{{ SITE_NAME }}</a>{% endblock %}
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <span class="fa fa-bars"></span>
             </button>
@@ -48,7 +51,7 @@
         {% endblock %}
         </div>
     </div>
-</header>
+</div>
 
 {% endblock %}
 
