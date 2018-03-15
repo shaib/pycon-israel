@@ -7,6 +7,16 @@
     height: 430px;
     background-color: #deeaf8;
   }
+  footer {
+    background: url('../images/footer.jpg') no-repeat left center;
+    background-color: rgba(0, 0, 0, 0);
+    background-position-y: center;
+    background-size: auto auto;
+    background-color: #82c0ca;
+    background-size: contain;
+    background-position-y: 0px;
+    height: 300px;
+  }
   .jumbotron {
     margin: 20px;
     margin-top: 50px !important;
@@ -50,7 +60,7 @@
     height: 154px;
   }
   .fixNavInnerPage {
-    top: -8px !important;
+    top: 24px !important;
   }
   #banner {
     background-image: url( "../images/banner_pyconil_2018.png");
@@ -123,7 +133,7 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    background-position-y: 178px;
+    background-position-y: 170px;
     animation-name: cloudAni;
     animation-duration: 14s;
     animation-iteration-count: infinite;
@@ -148,6 +158,7 @@
   h1 {
     color: #1d76bd;
   }
+
   h2 {
     color: #e34f25;
   }
@@ -158,6 +169,7 @@
         color: red;
       }
     }
+
     button, button:disabled {
       background: none;
       border: none;
@@ -185,7 +197,10 @@
     }
 
   }
-    @media only screen and (max-width: 982px) {
+    @media only screen and (max-width: 978px) {
+        .fixNavInnerPage {
+          top: 33px !important;
+        }
         .navPyconIL {
           .navbar {
             top: 174px;
