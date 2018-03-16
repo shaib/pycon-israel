@@ -21,9 +21,15 @@ class TalkProposalForm(ProposalForm):
         fields = [
             "title",
             "audience_level",
+            "duration",
+            "language",
+            "second_language",
             "description",
             "abstract",
             "additional_notes",
+            "target_audience",
+            "target_audience_other",
+            "specific_props",
             "recording_release",
         ]
 
@@ -35,8 +41,14 @@ class TutorialProposalForm(ProposalForm):
         fields = [
             "title",
             "audience_level",
+            "duration",
+            "language",
+            "second_language",
             "description",
             "abstract",
             "additional_notes",
+            "target_audience",
+            "target_audience_other",
+            "specific_props",
             "recording_release",
         ]
