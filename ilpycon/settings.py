@@ -147,6 +147,8 @@ INSTALLED_APPS = [
     "pinax.eventlog",
     "pinax.pages",
     "pinax.webanalytics",
+    "pinax.blog",
+    "pinax.images",
     "sitetree",
     "taggit",
     "timezones",

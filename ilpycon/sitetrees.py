@@ -8,6 +8,7 @@ sitetrees = (
   # A tree for English will serve as the default for now
   tree('main', 'main', items=[
       item('Home', 'home'),
+      item('Blog', 'pinax_blog:blog'),
       item('Code of Conduct', 'pinax_pages:pages_page "en/code-of-conduct/"'),
       item('Venue', 'pinax_pages:pages_page "en/venue/"'),
       item('Sponsors', '#', children=[
@@ -18,6 +19,7 @@ sitetrees = (
 
   tree('main_he', title='ראשי', items=[
       item('עמוד הבית', 'home'),
+      item('בלוג', 'pinax_blog:blog'),
       item('כללי התנהגות', 'pinax_pages:pages_page "he/code-of-conduct/"'),
       item('מקום', 'pinax_pages:pages_page "he/venue/"'),
       item('חסויות', '#', children=[
