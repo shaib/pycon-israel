@@ -9,7 +9,7 @@ Make sure you are using a virtual environment of some sort (e.g. `virtualenv` or
 npm install
 pip install -r requirements.txt
 ./manage.py migrate
-./manage.py loaddata sites conference sponsor_levels sponsor_benefits proposal_base pages audience
+./manage.py loaddata sites conference sponsor_levels sponsor_benefits proposal_base pages audience sponsors
 ./manage.py sitetree_resync_apps ilpycon
 ./manage.py compilemessages
 
@@ -26,6 +26,18 @@ After editing static pages from the CMS, export them them into fixtures using th
 ```
 ./manage.py dumpdata --indent 2 pinax_pages >fixtures/pages.json
 ```
+
+After changing symposion metadata:
+```
+./manage.py dumpdata --indent 4 symposion_conference >fixtures/conference.json
+./manage.py dumpdata --indent 4 symposion_sponsorship.sponsorlevel >fixtures/sponsor_levels.json
+./manage.py dumpdata --indent 4 symposion_sponsorship.benefit symposion_sponsorship.benefitlevel >fixtures/sponsor_benefits.json
+```
+Until we have master db access, we pass data via fixtures as well, so when editing sponsors do:
+```
+./manage.py dumpdata --indent 4 symposion_sponsorship.sponsor symposion_sponsorship.sponsorbenefit >fixtures/sponsors.json
+```
+
 ### Adding translations
 
 To (re)create the translation files:

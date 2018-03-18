@@ -1,35 +1,79 @@
 [
     {
-        "pk": 1, 
-        "model": "symposion_sponsorship.sponsorlevel", 
-        "fields": {
+	"model": "symposion_sponsorship.sponsorlevel",
+	"pk": 1,
+	"fields": {
             "conference": 1,
-            "description": "", 
-            "cost": 10000, 
-            "name": "Gold", 
-            "order": 0
-        }
-    }, 
+            "name": "Gold",
+            "order": 0,
+            "cost": 10000,
+            "description": ""
+	}
+    },
     {
-        "pk": 2, 
-        "model": "symposion_sponsorship.sponsorlevel", 
-        "fields": {
+	"model": "symposion_sponsorship.sponsorlevel",
+	"pk": 2,
+	"fields": {
             "conference": 1,
-            "description": "", 
-            "cost": 5000, 
-            "name": "Silver", 
-            "order": 1
-        }
-    }, 
+            "name": "Silver",
+            "order": 1,
+            "cost": 5000,
+            "description": ""
+	}
+    },
     {
-        "pk": 3, 
-        "model": "symposion_sponsorship.sponsorlevel", 
-        "fields": {
+	"model": "symposion_sponsorship.sponsorlevel",
+	"pk": 3,
+	"fields": {
             "conference": 1,
-            "description": "", 
-            "cost": 2000, 
-            "name": "Bronze", 
-            "order": 2
-        }
+            "name": "Bronze",
+            "order": 2,
+            "cost": 2000,
+            "description": ""
+	}
+    },
+    {
+	"model": "symposion_sponsorship.sponsorlevel",
+	"pk": 4,
+	"fields": {
+            "conference": 2,
+            "name": "Diamond",
+            "order": 0,
+            "cost": 40000,
+            "description": ""
+	}
+    },
+    {
+	"model": "symposion_sponsorship.sponsorlevel",
+	"pk": 5,
+	"fields": {
+            "conference": 2,
+            "name": "Gold",
+            "order": 1,
+            "cost": 30000,
+            "description": ""
+	}
+    },
+    {
+	"model": "symposion_sponsorship.sponsorlevel",
+	"pk": 6,
+	"fields": {
+            "conference": 2,
+            "name": "Silver",
+            "order": 2,
+            "cost": 20000,
+            "description": ""
+	}
+    },
+    {
+	"model": "symposion_sponsorship.sponsorlevel",
+	"pk": 7,
+	"fields": {
+            "conference": 2,
+            "name": "Friends of PyConIL",
+            "order": 3,
+            "cost": 2000,
+            "description": ""
+	}
     }
 ]

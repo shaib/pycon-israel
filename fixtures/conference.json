@@ -1,34 +1,44 @@
 [
     {
-        "pk": 1, 
-        "model": "symposion_conference.conference", 
-        "fields": {
-            "timezone": "US/Eastern", 
-            "start_date": "2040-01-01", 
-            "end_date": "2040-01-04", 
-            "title": "SymposionCon"
-        }
-    }, 
+	"model": "symposion_conference.conference",
+	"pk": 1,
+	"fields": {
+            "title": "SymposionCon",
+            "start_date": "2040-01-01",
+            "end_date": "2040-01-04",
+            "timezone": "US/Eastern"
+	}
+    },
     {
-        "pk": 1, 
-        "model": "symposion_conference.section", 
-        "fields": {
-            "conference": 1, 
-            "start_date": "2040-01-01", 
-            "name": "Tutorials", 
-            "end_date": "2040-01-01", 
-            "slug": "tutorials"
-        }
-    }, 
+	"model": "symposion_conference.conference",
+	"pk": 2,
+	"fields": {
+            "title": "PyCon Israel 2018",
+            "start_date": "2018-06-03",
+            "end_date": "2018-06-06",
+            "timezone": "Asia/Jerusalem"
+	}
+    },
     {
-        "pk": 2, 
-        "model": "symposion_conference.section", 
-        "fields": {
-            "conference": 1, 
-            "start_date": "2040-01-02", 
-            "name": "General Sessions", 
-            "end_date": "2040-01-04", 
-            "slug": "general-sessions"
-        }
+	"model": "symposion_conference.section",
+	"pk": 1,
+	"fields": {
+            "conference": 1,
+            "name": "Tutorials",
+            "slug": "tutorials",
+            "start_date": "2040-01-01",
+            "end_date": "2040-01-01"
+	}
+    },
+    {
+	"model": "symposion_conference.section",
+	"pk": 2,
+	"fields": {
+            "conference": 1,
+            "name": "General Sessions",
+            "slug": "general-sessions",
+            "start_date": "2040-01-02",
+            "end_date": "2040-01-04"
+	}
     }
 ]

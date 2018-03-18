@@ -1,0 +1,443 @@
+[
+{
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 1,
+    "fields": {
+        "applicant": 1,
+        "name": "Red Hat",
+        "display_url": "",
+        "external_url": "https://www.redhat.com/",
+        "annotation": "",
+        "contact_name": "Doron Fediuck",
+        "contact_email": "dfediuck@redhat.com",
+        "level": 5,
+        "added": "2018-03-17T22:27:03Z",
+        "active": true,
+        "sponsor_logo": 3,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 2,
+    "fields": {
+        "applicant": 1,
+        "name": "BlueVine",
+        "display_url": "",
+        "external_url": "https://www.bluevine.com/",
+        "annotation": "",
+        "contact_name": "Uzi Halaby Senerman",
+        "contact_email": "uzi.halaby.senerman@bluevine.com",
+        "level": 1,
+        "added": "2018-03-17T22:32:50Z",
+        "active": true,
+        "sponsor_logo": 4,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 3,
+    "fields": {
+        "applicant": 1,
+        "name": "Facebook",
+        "display_url": "",
+        "external_url": "https://www.facebook.com/",
+        "annotation": "",
+        "contact_name": "Nicole Holloway",
+        "contact_email": "nholloway@fb.com",
+        "level": 5,
+        "added": "2018-03-17T22:35:00Z",
+        "active": false,
+        "sponsor_logo": null,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 4,
+    "fields": {
+        "applicant": 1,
+        "name": "Singular",
+        "display_url": "",
+        "external_url": "https://www.singular.net/",
+        "annotation": "",
+        "contact_name": "Miri Dory",
+        "contact_email": "miri@singular.net",
+        "level": 5,
+        "added": "2018-03-17T22:39:22Z",
+        "active": false,
+        "sponsor_logo": null,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 5,
+    "fields": {
+        "applicant": 1,
+        "name": "Ravello Systems/Oracle",
+        "display_url": "",
+        "external_url": "https://cloud.oracle.com/en_US/ravello",
+        "annotation": "",
+        "contact_name": "Dafna Rosenbloom",
+        "contact_email": "dafna.rosenblum@oracle.com",
+        "level": 6,
+        "added": "2018-03-17T22:44:15Z",
+        "active": true,
+        "sponsor_logo": 15,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 6,
+    "fields": {
+        "applicant": 1,
+        "name": "Via",
+        "display_url": "",
+        "external_url": "https://ridewithvia.com/",
+        "annotation": "",
+        "contact_name": "Tal Seren",
+        "contact_email": "info@pycon.org.il",
+        "level": 6,
+        "added": "2018-03-17T22:50:01Z",
+        "active": true,
+        "sponsor_logo": 18,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 7,
+    "fields": {
+        "applicant": 1,
+        "name": "Seematics",
+        "display_url": "",
+        "external_url": "http://www.seematics.com/",
+        "annotation": "",
+        "contact_name": "Gil Westrich",
+        "contact_email": "g@seematics.com",
+        "level": 6,
+        "added": "2018-03-17T23:23:40Z",
+        "active": false,
+        "sponsor_logo": null,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 1,
+    "fields": {
+        "sponsor": 1,
+        "benefit": 4,
+        "active": true,
+        "max_words": 100,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 2,
+    "fields": {
+        "sponsor": 1,
+        "benefit": 3,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 3,
+    "fields": {
+        "sponsor": 1,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "sponsor_files/redhat_resized.png",
+        "is_complete": true
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 4,
+    "fields": {
+        "sponsor": 2,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "sponsor_files/BlueVine-logo.png",
+        "is_complete": true
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 5,
+    "fields": {
+        "sponsor": 2,
+        "benefit": 3,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 6,
+    "fields": {
+        "sponsor": 2,
+        "benefit": 4,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 7,
+    "fields": {
+        "sponsor": 3,
+        "benefit": 4,
+        "active": true,
+        "max_words": 100,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 8,
+    "fields": {
+        "sponsor": 3,
+        "benefit": 3,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 9,
+    "fields": {
+        "sponsor": 3,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 10,
+    "fields": {
+        "sponsor": 4,
+        "benefit": 4,
+        "active": true,
+        "max_words": 100,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 11,
+    "fields": {
+        "sponsor": 4,
+        "benefit": 3,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 12,
+    "fields": {
+        "sponsor": 4,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 13,
+    "fields": {
+        "sponsor": 5,
+        "benefit": 4,
+        "active": true,
+        "max_words": 100,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 14,
+    "fields": {
+        "sponsor": 5,
+        "benefit": 3,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 15,
+    "fields": {
+        "sponsor": 5,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "sponsor_files/Oracle_-_logo.jpg",
+        "is_complete": true
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 16,
+    "fields": {
+        "sponsor": 6,
+        "benefit": 4,
+        "active": true,
+        "max_words": 100,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 17,
+    "fields": {
+        "sponsor": 6,
+        "benefit": 3,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 18,
+    "fields": {
+        "sponsor": 6,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "sponsor_files/Via-logo.jpg",
+        "is_complete": true
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 19,
+    "fields": {
+        "sponsor": 7,
+        "benefit": 4,
+        "active": true,
+        "max_words": 100,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 20,
+    "fields": {
+        "sponsor": 7,
+        "benefit": 3,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 21,
+    "fields": {
+        "sponsor": 7,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+}
+]
