@@ -16,6 +16,8 @@ WIKI_SLUG = r"(([\w-]{2,})(/[\w-]{2,})*)"
 
 urlpatterns = i18n_patterns(
     path("", TemplateView.as_view(template_name="homepage.html"), name="home"),
+    path("speakers/", include("ilpycon.symposion.speakers.urls")),
+    path("dashboard/", dashboard, name="dashboard"),
 )
 
 urlpatterns += [
@@ -34,11 +36,6 @@ urlpatterns += [
                                    namespace="pinax_images")),
     path("", include("pinax.pages.urls", namespace="pinax_pages"))
 ]
-
-urlpatterns += i18n_patterns(
-    path("speakers/", include("ilpycon.symposion.speakers.urls")),
-    path("dashboard/", dashboard, name="dashboard"),
-)
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
