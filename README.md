@@ -9,10 +9,11 @@ Make sure you are using a virtual environment of some sort (e.g. `virtualenv` or
 npm install
 pip install -r requirements.txt
 ./manage.py migrate
-./manage.py loaddata sites conference sponsor_levels sponsor_benefits proposal_base pages audience sponsors
+./manage.py loaddata sites conference sponsor_levels sponsor_benefits proposal_base pages audience
 ./manage.py sitetree_resync_apps ilpycon
 ./manage.py compilemessages
-
+./manage.py createsuperuser --username=admin --email=admin@example.com --noinput
+./manage.py loaddata sponsors  # db must have at least 1 user to load that
 npm run dev
 ```
 
