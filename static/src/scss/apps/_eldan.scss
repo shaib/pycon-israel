@@ -12,10 +12,25 @@
     background-color: rgba(0, 0, 0, 0);
     background-position-y: center;
     background-size: auto auto;
-    background-color: #82c0ca;
-    background-size: contain;
+    background-color: #deeaf8;
+    background-size: unset;
     background-position-y: 0px;
     height: 300px;
+    div {
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+      padding: 0px;
+      margin: 0px;
+    }
+  }
+  .footerLogo {
+    background-image: url( "../images/logo_pyconil_2018.png");
+    background-position-y: 40px;
+    background-repeat: no-repeat;
+    width: 142px;
+    height: 200px;
+    background-position-x: right 20px;
   }
   .jumbotron {
     margin: 20px;
@@ -66,7 +81,7 @@
     background-image: url( "../images/banner_pyconil_2018.png");
     background-repeat: none;
     width: 179px;
-    height: 97px;
+    height: 72px;
     right: 0px;
     margin: 8px;
     position: absolute;
@@ -98,6 +113,15 @@
   #nav div{
     text-align: center;
     color: white;
+  }
+
+  .navbar-eldan {
+    .nav-link:hover {
+      color: white;
+    }
+    .nav-link:active {
+      color: orange;
+    }
   }
 
   #surf {
@@ -194,6 +218,14 @@
       background-image: url( "../images/inner_page_header.png");
       background-repeat: none;
       background-repeat: no-repeat;
+    }
+    .footerLogo {
+      display: none;
+    }
+    footer {
+      background-image: none;
+      background-color: #deeaf8;
+      height: 101px;
     }
 
   }
