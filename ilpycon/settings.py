@@ -233,7 +233,7 @@ AUTHENTICATION_BACKENDS = [
 # defined in source, not database. Currently does nothing.
 SITETREE_DYNAMIC_ONLY = True
 
-CONFERENCE_ID = 1
+CONFERENCE_ID = 2
 SYMPOSION_PAGE_REGEX = r"(([\w-]{1,})(/[\w-]{1,})*)/"
 PROPOSAL_FORMS = {
     "tutorial": "ilpycon.proposals.forms.TutorialProposalForm",
