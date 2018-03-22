@@ -1,101 +1,92 @@
-{% extends "site_base.html" %}
+{% extends "homepage_base.html" %}
 
 {% load i18n %}
 
 {% block head_title %}Pycon Israel 2018{% endblock %}
-
-{% block body_class %}home{% endblock %}
-
-{% block extra_header_class %}{% endblock %}
-
-{% block topbar_base %}
-  <header>
-    <div>
-      {% block headerInnerPages %}{% endblock %}
-      {{ block.super }}
-      <div><div class="cloud"></div><div class="cloud cloud2"></div></div>
-      <div id="city"></div>
-      <div id="nav"><div>{% block fixNavInnerPage %}{% endblock %}</div></div>
-      <div id="logo"></div>
-      <div id="surf"></div>
-      <div id="logoMobile"></div>
-      <div id="banner"></div>
-    </div>
-  </header>
-{% endblock %}
 
 {% block body_base %}
 <main>
     <section class="jumbotron">
         <div class="container">
             {% include "_messages.html" %}
-            <h1>Hello there</h1>
+            <h1>PyCon Israel 2018</h1>
             <p class="lead">
-                In addition to what is provided by Project Zero, this project
-                provides thorough integration with django-user-accounts, adding
-                comprehensive account management functionality. It is a foundation
-                suitable for most sites that have user accounts.
-            </p>
-            {% if not user.is_authenticated %}
-            {% url "account_login" as login_url %}
-            {% url "account_signup" as signup_url %}
-            <p class="mb-5 lead">{% blocktrans %}You can <a href="{{ login_url }}" class="btn btn-secondary">Log In</a> or <a href="{{ signup_url }}" class="btn btn-primary">Sign Up</a> to try out the site.{% endblocktrans %}</p>
-            {% endif %}
+	      PyCon Israel is happening on June 4-6, 2018! The event will be attended by
+	      hundreds of Pythonistas and sponsored by major international and local companies
+	      that use Python in their day-to-day business.
+	    </p>
         </div>
     </section>
     <section id="content-section">
         <div id="content-body">
-            <h2 class="text-center">Blah</h2>
             <p class="lead">
-                {% blocktrans %}
-                <b>Pinax</b> is an open-source platform based on Django and
-                intended to provide a starting point for websites. It takes
-                care of the things that many sites have in common, so you can
-                focus on what makes your site different.
-                {% endblocktrans %}
-            </p>
+	      Join us for two days of learning from world-class keynotes and miryad presentations,
+	      all about the Python programming language; then apply your new knowledge at a day of
+	      sprints and workshops, and don't forget to socialize, connect, and have fun!
+	    </p>
 
             <div class="feature-columns row">
                 <div class="col">
-                    <div class="icon"><i class="fa fa-cubes fa-3x"></i></div>
-                    <div class="desc">
-                        {% blocktrans %}
-                        <b>Starter projects</b> provide project layout,
-                        scaffolding, already integrated components and
-                        ready-to-go code.
-                        {% endblocktrans %}
-                    </div>
+		  <h3 class="text-center">PyData Track</h3>
+		  <p class="desc">
+		    Data Science and Engineering have become major fields in the last few years,
+		    in the industry in general, and the Python community in particular. PyCon Israel
+		    is proud to host a PyData track, for the second year in a row.
+		  </p>
                 </div>
                 <div class="col">
-                    <div class="icon"><i class="fa fa-puzzle-piece fa-3x"></i></div>
-                    <div class="desc">
-                        {% blocktrans %}
-                        <b>Reusable apps</b> provide common
-                        infrastructure, back-end functionality,
-                        and user-facing components.
-                        {% endblocktrans %}
-                    </div>
+		  <h3 class="text-center">Django Girls</h3>
+		  <p class="desc">
+		    <img src="https://djangogirls.org/static/img/global/logo.png" alt="Django Girls logo"
+			 style="width: 15ex; float: right; margin-left: 1ex;" />
+		    We are proud to cooperate with the <a href="https://djangogirls.org/">Django Girls</a>
+		    workshop, introducing women to programming for the web and beyond. A workshop will
+		    be held on <b>June 3</b> at the Red Hat offices in Ra'anana. Registration soon!
+		  </p>
+		  </p>
                 </div>
                 <div class="col">
-                    <div class="icon"><i class="fa fa-tint fa-3x"></i></div>
-                    <div class="desc">
-                        {% blocktrans %}
-                        <b>Themes</b> provide default templates and
-                        stylesheets for quick prototyping and easy customization.
-                        {% endblocktrans %}
-                    </div>
+		  <h3 class="text-center">Open Source</h3>
+		  <p class="desc">
+		    <img src="http://linux.org.il/site_images/hamakor.png" alt="Hamakor logo" 
+			 style="width: 15ex; float: right; margin-left: 1ex;" />
+		    Python itself, and most of its ecosystem, have always been Open Source software.
+		    PyCon Israel is organized under the auspices of <a href="https://www.hamakor.org.il">Hamakor</a>,
+		    the Israeli Open Source and Free Software Association.
+		  </p>
+                </div>
+            </div>
+	    <div class="feature-columns row">
+	      <div class="col">
+		  <h3 class="text-center">Become a Speaker</h3>
+		  <p class="desc">
+		    In order to make sure that this conference totally rocks, we need your participation.
+		    If you are working on something that you think is awesome and want to share it with
+		    others in the Python community,
+		    please <a href="https://goo.gl/forms/KfLh4udLqTjtQkz13">submit an abstract</a>.
+		    Submissions will be accepted until <b>April 4th</b>.
+		  </p>
+                </div>
+                <div class="col">
+		  <h3 class="text-center">Register</h3>
+		  <p class="desc">
+		    Tickets will be available right after Passover &mdash; watch this space!
+		  </p>
+                </div>
+                <div class="col">
+		  <h3 class="text-center">Become a Sponsor</h3>
+		  <p class="desc">
+		    We still have a few sponsorship slots open, if you want to show your
+		    support and make an impression on hundreds of enthusiastic pythonistas,
+		    <a href="mailto:info@pycon.org.il">contact us</a>.
+		  </p>
                 </div>
             </div>
         </div>
     </section>
     <section>
         <div class="container">
-            <p class="see-more lead text-center">
-                {% blocktrans %}
-                See <a href="http://pinaxproject.com/">pinaxproject.com</a>
-                for more information.
-                {% endblocktrans %}
-            </p>
+	  <h2 class="text-center">Sponsors</h2>
         </div>
     </section>
 </main>
