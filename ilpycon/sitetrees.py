@@ -11,7 +11,7 @@ sitetrees = (
       item('Blog', 'pinax_blog:blog'),
       item('Code of Conduct', 'pinax_pages:pages_page "en/code-of-conduct/"'),
       item('Venue', 'pinax_pages:pages_page "en/venue/"'),
-      item('Sponsors', '#', children=[
+      item('Sponsors', '#', in_menu=False, children=[
           item('Apply to be a Sponsor', 'sponsor_apply'),
           item('{{ SITE_NAME }} Sponsors', 'sponsor_list'),
       ]),
@@ -22,7 +22,7 @@ sitetrees = (
       item('בלוג', 'pinax_blog:blog'),
       item('כללי התנהגות', 'pinax_pages:pages_page "he/code-of-conduct/"'),
       item('מקום', 'pinax_pages:pages_page "he/venue/"'),
-      item('חסויות', '#', children=[
+      item('חסויות', '#', in_menu=False, children=[
           item('הצע חסות', 'sponsor_apply'),
           item('נותני החסות ל־{{ SITE_NAME }}', 'sponsor_list'),
       ]),
