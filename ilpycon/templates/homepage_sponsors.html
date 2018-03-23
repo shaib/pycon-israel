@@ -1,0 +1,26 @@
+{% load i18n %}
+{% load sponsorship_tags %}
+{% load thumbnail %}
+
+  <section style="text-align: center;">
+    {# Sponsors #}
+    <h2>{% trans "Sponsors" %}</h2>
+    
+    <div class="front-page-sponsors">
+      {% sponsor_levels as all_sponsor_levels %}
+      {% for sponsor_level in all_sponsor_levels %}
+        {% sponsors sponsor_level.name as level_sponsors %}
+        {% if level_sponsors %}
+          <p class="sponsor_level">{{ sponsor_level.name }}</p>
+          <p class="{{ sponsor_level.name|lower }}">
+  	  {% sponsors sponsor_level.name as level_sponsors %}
+	  {% for sponsor in level_sponsors %}
+  	    <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}">
+	      <img src="{% thumbnail sponsor.website_logo '300x300' %}"> {# Set size according to level? #}
+	    </a>
+ 	  {% endfor %}
+	{% endif %}  
+      {% endfor %}
+    </div>
+  </section>
+

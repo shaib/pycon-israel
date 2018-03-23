@@ -86,22 +86,8 @@
             </div>
         </div>
     </section>
-    <section>
-       {# Sponsors #}
-       <h2>Sponsors</h2>
 
-       <p class="front-page-sponsors">
-	 {% sponsors as all_sponsors %}
-	 {% for sponsor in all_sponsors %}
-	 <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}">
-	   <img src="{% thumbnail sponsor.website_logo '300x300' %}">
-	 </a>
-	 {% endfor %}
-       </p>
-    </section>
-        <div class="container">
-	  <h2 class="text-center">נותני חסות</h2>
-        </div>
-    </section>
+    {% include "homepage_sponsors.html" %}
+
 </main>
 {% endblock %}

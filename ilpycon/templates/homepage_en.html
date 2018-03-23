@@ -2,7 +2,6 @@
 
 {% load i18n %}
 {% load staticfiles %}
-{% load sponsorship_tags %}
 {% load thumbnail %}
 
 {% block head_title %}Pycon Israel 2018{% endblock %}
@@ -90,24 +89,7 @@
         </div>
     </section>
 
-    <section>
-       {# Sponsors #}
-       <h2>Sponsors</h2>
+    {% include "homepage_sponsors.html" %}
 
-       <p class="front-page-sponsors">
-	 {% sponsors as all_sponsors %}
-	 {% for sponsor in all_sponsors %}
-	 <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}">
-	   <img src="{% thumbnail sponsor.website_logo '300x300' %}">
-	 </a>
-	 {% endfor %}
-       </p>
-    </section>
-
-    <section>
-        <div class="container">
-	  <h2 class="text-center">Sponsors</h2>
-        </div>
-    </section>
 </main>
 {% endblock %}
