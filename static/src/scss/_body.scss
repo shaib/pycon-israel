@@ -28,8 +28,12 @@ footer {
 
 .pycon-footer {
   text-align: center;
-  background-color: #deeaf8;
+  background-color: $background;
   padding-bottom: 20px;
+}
+
+.pycon-footer > span.fb-share-button > span {
+  vertical-align: inherit !important;
 }
 
 // Right align links inside a header
