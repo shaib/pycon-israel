@@ -1,3 +1,5 @@
+import random
+
 from django import template
 from django.template.defaultfilters import linebreaks, urlize
 
@@ -37,9 +39,34 @@ class SponsorsNode(template.Node):
         else:
             queryset = Sponsor.objects.filter(level__conference=conference, active=True)\
                 .order_by("level__order", "added")
-            print(Sponsor.objects.filter(level__conference=conference))
-            print(Sponsor.objects.filter(level__conference=conference, active=True))
         context[self.context_var] = queryset
+        return u""
+
+class RandomSponsorNode(template.Node):
+
+    @classmethod
+    def handle_token(cls, parser, token):
+        bits = token.split_contents()
+        if len(bits) == 3 and bits[1] == "as":
+            return cls(bits[2])
+        else:
+            raise template.TemplateSyntaxError("%r takes 'as var'" % bits[0])
+
+    def __init__(self, context_var):
+        self.context_var = context_var
+
+    def render(self, context):
+        conference = current_conference()
+        queryset = (
+            Sponsor.objects.filter(level__conference=conference, active=True)
+                           .order_by("level__order", "added")
+                           .select_related("level")
+        )
+        sponsors = [sp for sp in queryset if sp.annotation]
+        max_level = max(sp.level.order for sp in sponsors)
+        # Prepare a lottery set, where smaller order means more occurrences
+        lottery = sum([(max_level+1-sp.level.order)*[sp] for sp in sponsors], [])
+        context[self.context_var] = random.choice(lottery)
         return u""
 
 
@@ -70,6 +97,14 @@ def sponsors(parser, token):
     {% sponsors "gold" as gold_sponsors %}
     """
     return SponsorsNode.handle_token(parser, token)
+
+
+@register.tag
+def random_sponsor(parser, token):
+    """
+    {% random_sponsor as sponsor %}
+    """
+    return RandomSponsorNode.handle_token(parser, token)
 
 
 @register.tag

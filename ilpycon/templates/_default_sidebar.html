@@ -3,23 +3,18 @@
 {% load pinax_boxes_tags %}
 {% load i18n %}
 
-{% sponsor_levels as levels %}
-
 <h4>{% trans "Sponsors" %}</h4>
 
 <div class="sponsor-list">
-    {% box "sponsor-top" %}
-    {% for level in levels %}
-        {% if level.sponsors %}
-            <h3 style="margin-top: 3em;">{{ level.name }}</h3>
-\
-            {% for sponsor in level.sponsors %}
-                <div style="margin: 10px 0;">
-                    <a href="{{ sponsor.external_url }}">
-                        <img src="{% thumbnail sponsor.website_logo '100x60' %}" alt="{{ sponsor.name }}" />
-                    </a>
-                </div>
-            {% endfor %}
-        {% endif %}
-    {% endfor %}
+  {% box "sponsor-top" %}
+  {% random_sponsor as sponsor %}
+  <h3 style="margin-top: 3em;">{{ sponsor.level.name }}</h3>
+  <div style="margin: 10px 0;">
+    <a href="{{ sponsor.external_url }}">
+      <img src="{% thumbnail sponsor.website_logo '100x60' %}" alt="{{ sponsor.name }}" />
+    </a>
+    <p>
+      {{ sponsor.annotation }}
+    </p>
+  </div>
 </div>
