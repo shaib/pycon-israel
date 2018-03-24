@@ -5,74 +5,85 @@
 {% block head_title %}Pycon ישראל 2018{% endblock %}
 
 {% block body_base %}
-<main>
+<main {% if LANGUAGE_BIDI %}style="direction: rtl;"{% endif %}>
     <section class="jumbotron">
         <div class="container">
             {% include "_messages.html" %}
-            <h1>שלום כתה א</h1>
+            <h1>PyCon ישראל 2018</h1>
             <p class="lead">
-	      שלום גם לגננת
-            </p>
-            {% if not user.is_authenticated %}
-            {% url "account_login" as login_url %}
-            {% url "account_signup" as signup_url %}
-            <p class="mb-5 lead">{% blocktrans %}You can <a href="{{ login_url }}" class="btn btn-secondary">Log In</a> or <a href="{{ signup_url }}" class="btn btn-primary">Sign Up</a> to try out the site.{% endblocktrans %}</p>
-            {% endif %}
+      	      כנס PyCon ישראל יתקיים בתאריכים 4-6 ליוני 2018! בכנס ישתתפו
+              מאות פייתונאים, והוא יקבל חסות מחברות מקומיות וחברות בינלאומיות גדולות,
+              שמשתמשות בשפת Python באופן יום-יומי לעסקיהן.
+	    </p>
         </div>
     </section>
     <section id="content-section">
         <div id="content-body">
-            <h2 class="text-center">Blah</h2>
             <p class="lead">
-                {% blocktrans %}
-                <b>Pinax</b> is an open-source platform based on Django and
-                intended to provide a starting point for websites. It takes
-                care of the things that many sites have in common, so you can
-                focus on what makes your site different.
-                {% endblocktrans %}
+	      הצטרפו אלינו ליומיים של לימוד ממרצים אורחים ברמה עולמית, והרצאות רבות ומגוונות,
+              על כל מה שקשור לשפת התכנות Python. אחר כך, ישמו את הידע שלכם ביום של
+              ספרינטים וסדנאות, ואל תשכחו להתחבר, ליצור קשרים, ולבלות!
             </p>
-
             <div class="feature-columns row">
                 <div class="col">
-                    <div class="icon"><i class="fa fa-cubes fa-3x"></i></div>
-                    <div class="desc">
-                        {% blocktrans %}
-                        <b>Starter projects</b> provide project layout,
-                        scaffolding, already integrated components and
-                        ready-to-go code.
-                        {% endblocktrans %}
-                    </div>
+		  <h3 class="text-center">מסלול PyData</h3>
+		  <p class="desc">
+                    מדע הנתונים (Data Science) ותחומי ההנדסה הקשורים אליו הפכו להיות תחומים מרכזיים
+                    בשנים האחרונות, בתעשיה באופן כללי ובקהילת Python בפרט. PyCon ישראל גאה לארח
+                    מסלול PyData יעודי, בפעם השניה ברציפות.
+		  </p>
                 </div>
                 <div class="col">
-                    <div class="icon"><i class="fa fa-puzzle-piece fa-3x"></i></div>
-                    <div class="desc">
-                        {% blocktrans %}
-                        <b>Reusable apps</b> provide common
-                        infrastructure, back-end functionality,
-                        and user-facing components.
-                        {% endblocktrans %}
-                    </div>
+		  <h3 class="text-center">Django Girls</h3>
+		  <p class="desc">
+		    <img src="https://djangogirls.org/static/img/global/logo.png" alt="Django Girls logo"
+			 style="width: 15ex; float: left; margin-right: 1ex;" />
+		    אנו גאים לשתף פעולה עם סדנת <a href="https://djangogirls.org/">Django Girls</a>,
+		    שמעבירה הכרות מעשיתה לנשים עם תכנות עבור הרשת ומעבר לכך.
+		    הסדנה תתקיים ב-3 ליוני במשרדי Red Hat ברעננה. ההרשמה תפתח בקרוב!
+		  </p>
+		  </p>
                 </div>
                 <div class="col">
-                    <div class="icon"><i class="fa fa-tint fa-3x"></i></div>
-                    <div class="desc">
-                        {% blocktrans %}
-                        <b>Themes</b> provide default templates and
-                        stylesheets for quick prototyping and easy customization.
-                        {% endblocktrans %}
-                    </div>
+		  <h3 class="text-center">קוד פתוח</h3>
+		  <p class="desc">
+		    <img src="http://linux.org.il/site_images/hamakor.png" alt="Hamakor logo" 
+			 style="width: 15ex; float: left; margin-right: 1ex;" />
+		    שפת Python עצמה, ורוב האקוסיסטם שלה, היו מאז ומתמיד תוכנות בקוד פתוח.
+		    PyCon ישראל נערך בחסות עמותת <a href="https://www.hamakor.org.il">המקור</a>,
+		    העמותה הישראלית לקוד פתוח ותוכנה חופשית.
+		  </p>
+                </div>
+            </div>
+	    <div class="feature-columns row">
+	      <div class="col">
+		  <h3 class="text-center">בואו להרצות!</h3>
+		  <p class="desc">
+		    כדי לוודא שהכנס יהיה הצלחה מסחררת, אנו זקוקים לעזרתכם.
+		    אם אתם עובדים על משהו שהוא מלהיב בעיניכם ואתם מעוניינים לשתף אותו
+		    עם אחרים בקהילת הפייתון, אנא <a href="https://goo.gl/forms/cfGvLs61yqDICOTJ2">שלחו תקציר</a>.‬
+		    הצעות יתקבלו עד תאריך <b>4 לאפריל</b>.
+		  </p>
+                </div>
+                <div class="col">
+		  <h3 class="text-center">הרשמה</h3>
+		  <p class="desc">
+		    כרטיסים יוצאו למכירה מיד אחרי פסח &mdash; עקבו אחר האתר!
+		  </p>
+                </div>
+                <div class="col">
+		  <h3 class="text-center">תנו חסות</h3>
+		  <p class="desc">
+		    ישנם עדיין כמה מקומות לנותני חסות נוספים, אם ברצונכם להראות
+		    את תמיכתכם ולהשאיר רושם על מאות פייתונאים נלהבים, אנא
+		    <a href="mailto:info@pycon.org.il">צרו קשר</a>.
+		  </p>
                 </div>
             </div>
         </div>
     </section>
-    <section>
         <div class="container">
-            <p class="see-more lead text-center">
-                {% blocktrans %}
-                See <a href="http://pinaxproject.com/">pinaxproject.com</a>
-                for more information.
-                {% endblocktrans %}
-            </p>
+	  <h2 class="text-center">נותני חסות</h2>
         </div>
     </section>
 </main>
