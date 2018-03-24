@@ -16,7 +16,7 @@
         <li class="nav-item">
             <a class="nav-link" id="account_logout" href="{% url 'account_logout' %}"><i class="fas fa-power-off"></i></a>
         </li>
-    {% else %}
+    {% elif not HIDE_ACCOUNT_BAR %}
         <li class="nav-item"><a class="nav-link" href="{% url 'account_login' %}">{% trans "Log in" %}</a></li>
         {% if ACCOUNT_OPEN_SIGNUP %}
             <li class="nav-item"><a class="nav-link" href="{% url 'account_signup' %}">{% trans "Sign up" %}</a></li>
