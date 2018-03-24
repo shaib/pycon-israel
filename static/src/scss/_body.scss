@@ -26,6 +26,30 @@ footer {
   }
 }
 
+.tweeter-logo {
+  background-image: url("../images/Twitter-logo2.png");
+  background-size: 100%;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+
+.fb-logo {
+  background-image: url("../images/fb-art.png");
+  background-size: 100%;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+
+.envelope-icon {
+  background-image: url("../images/envelope-icon.png");
+  background-size: 100%;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+
 .pycon-footer {
   text-align: center;
   background-color: $background;
