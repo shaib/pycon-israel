@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-11 21:44+0000\n"
+"POT-Creation-Date: 2018-03-25 00:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,62 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ilpycon/proposals/models.py:15 ilpycon/proposals/models.py:61
+msgid "Target Audience"
+msgstr ""
+
+#: ilpycon/proposals/models.py:16
+msgid "Target Audiences"
+msgstr ""
+
+#: ilpycon/proposals/models.py:35
+msgid "Standard 25 minutes talk."
+msgstr ""
+
+#: ilpycon/proposals/models.py:36
+msgid "Long 40 minutes talk."
+msgstr ""
+
+#: ilpycon/proposals/models.py:37
+msgid "Half day workshop/sprint (3.5 hours net)."
+msgstr ""
+
+#: ilpycon/proposals/models.py:38
+msgid "Full day workshop/sprint (7 hours net)."
+msgstr ""
+
+#: ilpycon/proposals/models.py:44
+msgid "Session Duration"
+msgstr ""
+
+#: ilpycon/proposals/models.py:48
+msgid "Proposal Language"
+msgstr ""
+
+#: ilpycon/proposals/models.py:51
+msgid "Propsal Lanugauge - 2nd choice"
+msgstr ""
+
+#: ilpycon/proposals/models.py:54
+msgid ""
+"By submitting your proposal, you agree to give permission to the conference "
+"organizers to record, edit, and release audio and/or video of your "
+"presentation. If you do not agree to this, please uncheck this box."
+msgstr ""
+
+#: ilpycon/proposals/models.py:63
+msgid "Other target audience"
+msgstr ""
+
+#: ilpycon/proposals/models.py:66
+msgid "Specific Props"
+msgstr ""
+
+#: ilpycon/proposals/models.py:67
+msgid "Any Specific Props Needed?"
+msgstr ""
+
 #: ilpycon/proxy/apps.py:8
 msgid "Proxy"
 msgstr ""
@@ -41,14 +97,13 @@ msgstr ""
 msgid "Sponsors"
 msgstr "נותני חסות"
 
-#: ilpycon/templates/_footer.html:5
-#, python-format
-msgid ""
-"\n"
-"<div class=\"copyright\">&copy; %(current_year)s PyCon Israel</div>\n"
-"<div class=\"powered-by\">Site Powered by Eldarion's <a href=\"http://"
-"eldarion.com/symposion/\">Symposion</a></div>\n"
-msgstr ""
+#: ilpycon/templates/_footer.html:6
+msgid "Share:"
+msgstr "שתפו:"
+
+#: ilpycon/templates/_footer.html:10
+msgid "Contact us:"
+msgstr "צרו קשר:"
 
 #: ilpycon/templates/dashboard.html:18
 msgid "Speaking"
@@ -68,91 +123,11 @@ msgstr ""
 msgid "Teams"
 msgstr ""
 
-#: ilpycon/templates/homepage_en.html:27 ilpycon/templates/homepage_he.html:24
-#: ilpycon/templates/homepage_old.html:35
-msgid ""
-"\n"
-"                <b>Pinax</b> is an open-source platform based on Django and\n"
-"                intended to provide a starting point for websites. It takes\n"
-"                care of the things that many sites have in common, so you "
-"can\n"
-"                focus on what makes your site different.\n"
-"                "
-msgstr ""
-
-#: ilpycon/templates/homepage_en.html:39 ilpycon/templates/homepage_he.html:36
-#: ilpycon/templates/homepage_old.html:79
-msgid ""
-"\n"
-"                See <a href=\"http://pinaxproject.com/\">pinaxproject.com</"
-"a>\n"
-"                for more information.\n"
-"                "
-msgstr ""
-
-#: ilpycon/templates/homepage_old.html:14
-msgid ""
-"Welcome to<div style=\"font-size: 6rem; font-weight: 600;\">Project Account</"
-"div>"
-msgstr ""
-
-#: ilpycon/templates/homepage_old.html:16
-msgid ""
-"\n"
-"                In addition to what is provided by Project Zero, this "
-"project\n"
-"                provides thorough integration with django-user-accounts, "
-"adding\n"
-"                comprehensive account management functionality. It is a "
-"foundation\n"
-"                suitable for most sites that have user accounts.\n"
-"                "
-msgstr ""
-
-#: ilpycon/templates/homepage_old.html:26
-#, python-format
-msgid ""
-"You can <a href=\"%(login_url)s\" class=\"btn btn-secondary\">Log In</a> or "
-"<a href=\"%(signup_url)s\" class=\"btn btn-primary\">Sign Up</a> to try out "
-"the site."
-msgstr ""
-
-#: ilpycon/templates/homepage_old.html:33
-msgid "What is Pinax?"
-msgstr ""
-
-#: ilpycon/templates/homepage_old.html:47
-msgid ""
-"\n"
-"                        <b>Starter projects</b> provide project layout,\n"
-"                        scaffolding, already integrated components and\n"
-"                        ready-to-go code.\n"
-"                        "
-msgstr ""
-
-#: ilpycon/templates/homepage_old.html:57
-msgid ""
-"\n"
-"                        <b>Reusable apps</b> provide common\n"
-"                        infrastructure, back-end functionality,\n"
-"                        and user-facing components.\n"
-"                        "
-msgstr ""
-
-#: ilpycon/templates/homepage_old.html:67
-msgid ""
-"\n"
-"                        <b>Themes</b> provide default templates and\n"
-"                        stylesheets for quick prototyping and easy "
-"customization.\n"
-"                        "
-msgstr ""
-
 #: ilpycon/templates/pinax/boxes/_box.html:8
 msgid "Edit"
 msgstr ""
 
-#: ilpycon/templates/site_base.html:38
+#: ilpycon/templates/site_base.html:64
 msgid "Dashboard"
 msgstr ""
 

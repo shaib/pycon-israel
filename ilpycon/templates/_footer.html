@@ -3,11 +3,11 @@
 {% now "Y" as current_year %}
 <div class="footer-logo"></div>
 <div class="pycon-footer">
-  Share:
+  {% trans "Share:" %}
   <span class="fb-share-button" data-href="https://il.pycon.org/2018" data-layout="button" data-size="small" data-mobile-iframe="false"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fil.pycon.org%2F2018&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">share</a></span>
   <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Pycon%20Israel">tweet</a>
   <div>
-    contact us: <a href="mailto:info@pycon.org.il" class="envelope-icon"></a>
+    {% trans "Contact us:" %} <a href="mailto:info@pycon.org.il" class="envelope-icon"></a>
       <a href="https://www.facebook.com/pyconisrael" class="fb-logo"></a>
       <a href="https://twitter.com/pyconil" class="tweeter-logo"></a>
   </div>
