@@ -147,6 +147,69 @@
     }
 },
 {
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 8,
+    "fields": {
+        "applicant": 1,
+        "name": "Twist BioScience",
+        "display_url": "",
+        "external_url": "https://twistbioscience.com/",
+        "annotation": "",
+        "contact_name": "Aviva Gatt",
+        "contact_email": "agatt@twistbioscience.com",
+        "level": 4,
+        "added": "2018-03-24T15:13:19Z",
+        "active": false,
+        "sponsor_logo": null,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 9,
+    "fields": {
+        "applicant": 1,
+        "name": "Eldarion",
+        "display_url": "",
+        "external_url": "https://eldarion.com/",
+        "annotation": "",
+        "contact_name": "Patrick Altman",
+        "contact_email": "paltman@pinax.slack.com",
+        "level": 7,
+        "added": "2018-03-24T15:16:58Z",
+        "active": true,
+        "sponsor_logo": 22,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 10,
+    "fields": {
+        "applicant": 1,
+        "name": "Kaplan Open Source",
+        "display_url": "",
+        "external_url": "https://kaplanopensource.co.il/",
+        "annotation": "",
+        "contact_name": "Lior Kaplan",
+        "contact_email": "lior@kaplanopensource.co.il",
+        "level": 7,
+        "added": "2018-03-27T11:11:27Z",
+        "active": true,
+        "sponsor_logo": 23,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
     "model": "symposion_sponsorship.sponsorbenefit",
     "pk": 1,
     "fields": {
@@ -438,6 +501,34 @@
         "text": "",
         "upload": "",
         "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 22,
+    "fields": {
+        "sponsor": 9,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "sponsor_files/eldarion-logo.png",
+        "is_complete": true
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 23,
+    "fields": {
+        "sponsor": 10,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "sponsor_files/OrangeMan_Logo_Strip_WhiteENG.png",
+        "is_complete": true
     }
 }
 ]
