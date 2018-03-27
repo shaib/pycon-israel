@@ -1,0 +1,57 @@
+.diamond {
+    background: url('../images/diamond-4-2016032952.svg') no-repeat left center;
+}
+.gold {
+    background: url('../images/hrum-gold.svg') no-repeat left center;
+}
+.silver {
+    background: url('../images/hrum-remix-silver.svg') no-repeat left center;
+}
+.friends-of-pyconil {
+    background: url('../images/Handshake-04-Man-Woman.svg') no-repeat left center;
+}
+
+
+.front-page-sponsors {
+    margin-left: 10ex;
+    margin-right: 10ex;
+    p {
+	display: flex;
+	justify-content: space-between;
+    }
+    span {
+	height: 15ex;
+	width: 30ex;
+    }
+    /*
+    .diamond {
+        background: url('../images/diamond-4-2016032952.svg') no-repeat left center;
+    }
+    .gold {
+	height: 15ex;
+	width: 30ex;
+        background: url('../images/hrum-gold.svg') no-repeat left center;
+    }
+    .silver {
+	height: 15ex;
+	width: 30ex;
+        background: url('../images/hrum-remix-silver.svg') no-repeat left center;
+    }
+    .friends-of-pyconil {
+	height: 15ex;
+	width: 30ex;
+        background: url('../images/Handshake-04-Man-Woman.svg') no-repeat left center;
+    }
+    */
+}
+
+.sponsor-list {
+    unicode-bidi: isolate-override;
+    direction: ltr;
+    .level-logo {
+	height: 1.5ex;
+	width: 3ex;
+	display: inline-block;
+	margin-left: 1ex;
+    }
+}

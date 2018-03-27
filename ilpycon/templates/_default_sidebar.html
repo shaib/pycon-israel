@@ -8,7 +8,11 @@
 <div class="sponsor-list">
   {% box "sponsor-top" %}
   {% random_sponsor as sponsor %}
-  <h3 style="margin-top: 3em;">{{ sponsor.level.name }}</h3>
+  <h3 style="margin-top: 3em;">
+    {{ sponsor.level.name }}
+    <i class="level-logo {{ sponsor.level.name|slugify }}"></i>
+  </h3>
+
   <div style="margin: 10px 0;">
     <a href="{{ sponsor.external_url }}">
       <img src="{% thumbnail sponsor.website_logo '100x60' %}" alt="{{ sponsor.name }}" />
