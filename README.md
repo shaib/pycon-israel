@@ -38,6 +38,15 @@ To (re)create the translation files:
 
 - Use the `pycon.israel.devops@gmail.com` account to add site collaborators
 - Install the Heroku CLI and login via `heroku login`
+- Before pushing, we need to setup the buildpacks (gettext, nodejs, python - in that order):
+```
+  heroku buildpacks:add https://github.com/piotras/heroku-buildpack-gettext.git
+  heroku buildpacks:add heroku/nodejs
+  heroku buildpacks:add heroku/python
+```
+  verify the resulting list using: `heroku buildpacks`, check that these and only these appear
+  on the list. If not, use `heroku buildpacks:remove -i {number}` to remove bad ones.
+
 - `git push heroku $branch_name:master`, e.g. `git push heroku heroku-deploy:master`
 
 ## Configure the site to be ran behind a reverse proxy
