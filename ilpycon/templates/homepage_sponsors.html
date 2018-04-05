@@ -16,7 +16,8 @@
   	  {% sponsors sponsor_level.name as level_sponsors %}
 	  {% for sponsor in level_sponsors %}
   	    <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}">
-	      <img src="{% thumbnail sponsor.website_logo '300x300' %}"> {# Set size according to level? #}
+	      {% thumbnail sponsor.website_logo '300x300' as icon %} {# Set size according to level? #}
+	      <img src="{{ icon|data_uri }}" alt="{{ sponsor.name }}">
 	    </a>
  	  {% endfor %}
           </p>  

@@ -15,7 +15,8 @@
 
   <div style="margin: 10px 0;">
     <a href="{{ sponsor.external_url }}">
-      <img src="{% thumbnail sponsor.website_logo '100x60' %}" alt="{{ sponsor.name }}" />
+      {% thumbnail sponsor.website_logo '100x60' as icon %}
+      <img src="{{ icon|data_uri }}" alt="{{ sponsor.name }}" />
     </a>
     <p>
       {{ sponsor.annotation }}

@@ -23,7 +23,8 @@
                         <div class="col-md-2">
                             <h2>
                                 <a href="{{ sponsor.external_url }}">
-                                    <img src="{% thumbnail sponsor.website_logo '150x80' %}" alt="{{ sponsor.name }}" />
+				  {% thumbnail sponsor.website_logo '150x80' as logo %}
+                                  <img src="{{ logo|data_uri }}" alt="{{ sponsor.name }}" />
                                 </a>
                             </h2>
                         </div>
