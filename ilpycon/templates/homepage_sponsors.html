@@ -6,23 +6,25 @@
     {# Sponsors #}
     <h2>{% trans "Sponsors" %}</h2>
     
-    <div class="front-page-sponsors">
+    <table class="front-page-sponsors">
       {% sponsor_levels as all_sponsor_levels %}
       {% for sponsor_level in all_sponsor_levels %}
         {% sponsors sponsor_level.name as level_sponsors %}
         {% if level_sponsors %}
-          <p>
-          <span class="{{ sponsor_level.name|slugify }}"></span>
+          <tr>
+            <th class="{{ sponsor_level.name|slugify }}" width="300"></th>
+	    <td>
   	  {% sponsors sponsor_level.name as level_sponsors %}
 	  {% for sponsor in level_sponsors %}
   	    <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}">
 	      {% thumbnail sponsor.website_logo '300x300' as icon %} {# Set size according to level? #}
 	      <img src="{{ icon|data_uri }}" alt="{{ sponsor.name }}">
 	    </a>
- 	  {% endfor %}
-          </p>  
+ 	    {% endfor %}
+	    </td>
+          </tr>  
 	{% endif %}  
       {% endfor %}
-    </div>
+    </table>
   </div>
 
