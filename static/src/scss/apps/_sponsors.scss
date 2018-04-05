@@ -1,14 +1,14 @@
 .diamond {
-    background: url('../images/diamond-4-2016032952.svg') no-repeat left center;
+    background: url('../images/diamond-4-2016032952.svg') no-repeat left top;
 }
 .gold {
-    background: url('../images/hrum-gold.svg') no-repeat left center;
+    background: url('../images/hrum-gold.svg') no-repeat left top;
 }
 .silver {
-    background: url('../images/hrum-remix-silver.svg') no-repeat left center;
+    background: url('../images/hrum-remix-silver.svg') no-repeat left top;
 }
 .friends-of-pyconil {
-    background: url('../images/Handshake-04-Man-Woman.svg') no-repeat left center;
+    background: url('../images/Handshake-04-Man-Woman.svg') no-repeat left top;
 }
 
 
@@ -17,11 +17,9 @@ h2 {
 }
 
 .front-page-sponsors {
-    margin-left: 10ex;
-    margin-right: 10ex;
-    p {
-	display: flex;
-	justify-content: space-between;
+    td {
+	width: 75%;
+	text-align: justify;
     }
     span {
 	height: 15ex;
