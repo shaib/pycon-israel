@@ -530,5 +530,47 @@
         "upload": "sponsor_files/OrangeMan_Logo_Strip_WhiteENG.png",
         "is_complete": true
     }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 24,
+    "fields": {
+        "sponsor": 8,
+        "benefit": 4,
+        "active": true,
+        "max_words": 200,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 25,
+    "fields": {
+        "sponsor": 9,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 26,
+    "fields": {
+        "sponsor": 10,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
 }
 ]
