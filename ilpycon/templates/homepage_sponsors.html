@@ -12,7 +12,9 @@
         {% sponsors sponsor_level.name as level_sponsors %}
         {% if level_sponsors %}
           <tr>
-            <th class="{{ sponsor_level.name|slugify }}" width="300"></th>
+            <th class="{{ sponsor_level.name|slugify }}" width="300">
+	      {{ sponsor_level.name }}
+	    </th>
 	    <td>
   	  {% sponsors sponsor_level.name as level_sponsors %}
 	  {% for sponsor in level_sponsors %}
