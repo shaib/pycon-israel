@@ -2,31 +2,30 @@
 {% load sponsorship_tags %}
 {% load thumbnail %}
 
-  <div class="container">
-    {# Sponsors #}
-    <h2>{% trans "Sponsors" %}</h2>
-    
-    <table class="front-page-sponsors">
-      {% sponsor_levels as all_sponsor_levels %}
-      {% for sponsor_level in all_sponsor_levels %}
+<div class="container front-page-sponsors">
+  {# Sponsors #}
+  <h2>{% trans "Sponsors" %}</h2>
+  {% sponsor_levels as all_sponsor_levels %}
+  {% for sponsor_level in all_sponsor_levels %}
+    {% sponsors sponsor_level.name as level_sponsors %}
+    {% if level_sponsors %}
+      <div class="row">
+        <div class="col-3 sponsor-name">
+          <h3>{{ sponsor_level.name }}</h3>
+        </div>
+        <div class="col-9 sponsor-logos">
         {% sponsors sponsor_level.name as level_sponsors %}
-        {% if level_sponsors %}
-          <tr>
-            <th class="{{ sponsor_level.name|slugify }}" width="300">
-	      {{ sponsor_level.name }}
-	    </th>
-	    <td>
-  	  {% sponsors sponsor_level.name as level_sponsors %}
-	  {% for sponsor in level_sponsors %}
-  	    <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}">
-	      {% thumbnail sponsor.website_logo '300x300' as icon %} {# Set size according to level? #}
-	      <img src="{{ icon|data_uri }}" alt="{{ sponsor.name }}">
-	    </a>
- 	    {% endfor %}
-	    </td>
-          </tr>  
-	{% endif %}  
-      {% endfor %}
-    </table>
-  </div>
+        {% for sponsor in level_sponsors %}
+          <div class="sponsor-logo">
+            <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}">
+              {% thumbnail sponsor.website_logo '300x300' as icon %} {# Set size according to level? #}
+              <img src="{{ icon|data_uri }}" alt="{{ sponsor.name }}">
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>  
+    {% endif %}  
+  {% endfor %}
+</div>
 
