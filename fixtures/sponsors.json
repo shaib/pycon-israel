@@ -33,7 +33,7 @@
         "contact_email": "uzi.halaby.senerman@bluevine.com",
         "level": 5,
         "added": "2018-03-17T22:32:50Z",
-        "active": false,
+        "active": true,
         "sponsor_logo": 4,
         "web_logo_benefit": null,
         "print_logo_benefit": null,
@@ -203,6 +203,48 @@
         "added": "2018-03-27T11:11:27Z",
         "active": true,
         "sponsor_logo": 23,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 11,
+    "fields": {
+        "applicant": 1,
+        "name": "JPMorgan",
+        "display_url": "",
+        "external_url": "https://jobs.jpmorganchase.com/ListJobs/ByCountry/IL/",
+        "annotation": "JPMorgan Chase & Co. is not only a leading global financial institution. It is also one of the world\u2019s biggest tech companies. In 14 technology hubs worldwide, our team of 40,000+ technologists design, build and deploy everything from enterprise technology initiatives to big data and mobile solutions, as well as innovations in electronic payments, cybersecurity, machine learning, and cloud development. Our $9.5B+ annual investment in technology enables us to hire people to create innovative solutions that will not only transform the financial services industry, but also change the world. \r\n \r\nWe are hiring junior and experienced Python developers for various positions in our newly-built, hi-tech hub in Herzliya. Check out our openings here: https://jobs.jpmorganchase.com/ListJobs/ByCountry/IL/",
+        "contact_name": "Victoria Ilukhina",
+        "contact_email": "victoria.ilukhina@jpmorgan.com",
+        "level": 4,
+        "added": "2018-04-08T00:49:25Z",
+        "active": true,
+        "sponsor_logo": 24,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 12,
+    "fields": {
+        "applicant": 1,
+        "name": "FundBox",
+        "display_url": "",
+        "external_url": "https://fundbox.com/jobs",
+        "annotation": "",
+        "contact_name": "Iris Feinmesser",
+        "contact_email": "iris.feinmesser@fundbox.com",
+        "level": 6,
+        "added": "2018-04-08T00:53:52Z",
+        "active": true,
+        "sponsor_logo": 25,
         "web_logo_benefit": null,
         "print_logo_benefit": null,
         "print_description_benefit": null,
@@ -528,6 +570,34 @@
         "other_limits": "",
         "text": "",
         "upload": "sponsor_files/OrangeMan_Logo_Strip_WhiteENG.png",
+        "is_complete": true
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 24,
+    "fields": {
+        "sponsor": 11,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "sponsor_files/JPM_logo_2008_PRINT_D_Black.jpg",
+        "is_complete": true
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 25,
+    "fields": {
+        "sponsor": 12,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "sponsor_files/Fundbox-Logo_original.png",
         "is_complete": true
     }
 }
