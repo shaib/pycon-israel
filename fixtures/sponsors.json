@@ -210,6 +210,48 @@
     }
 },
 {
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 11,
+    "fields": {
+        "applicant": 1,
+        "name": "FundBox",
+        "display_url": "",
+        "external_url": "https://fundbox.com/",
+        "annotation": "Small businesses are the backbone and growth engine of the world economy. But it's very hard running an SMB, and playing field is far from leveled.\r\n\r\nFundbox is an innovative Fintech startup focused on providing SMBs with better chances to survive, grow and thrive by giving them new financial power and enabling better access to capital.\r\nWe do this by developing state-of-the-art Web and mobile applications with simple user flows and fully automated processes fueled by innovative machine-learning models. \r\nOur offices are in San Francisco and Tel-Aviv, which is our tech center. Our infrastructure and applications are comprised of Python micro-services at the back-end, serving Angular and React on the front-end. We love innovation, automation, data, slick design and whiskey drinking. Above all, we believe that coupling great people with great technology can make a real-world difference.",
+        "contact_name": "Iris Feinmesser",
+        "contact_email": "iris.feinmesser@fundbox.com",
+        "level": 6,
+        "added": "2018-04-07T23:34:02Z",
+        "active": false,
+        "sponsor_logo": 29,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 12,
+    "fields": {
+        "applicant": 1,
+        "name": "JP Morgan",
+        "display_url": "",
+        "external_url": "https://www.jpmorgan.com/country/IL/EN/jpmorgan",
+        "annotation": "PMorgan Chase & Co. is not only a leading global financial institution. It is also one of the world\u2019s biggest tech companies. In 14 technology hubs worldwide, our team of 40,000+ technologists design, build and deploy everything from enterprise technology initiatives to big data and mobile solutions, as well as innovations in electronic payments, cybersecurity, machine learning, and cloud development. Our $9.5B+ annual investment in technology enables us to hire people to create innovative solutions that will not only transform the financial services industry, but also change the world. \r\n \r\nWe are hiring junior and experienced Python developers for various positions in our newly-built, hi-tech hub in Herzliya. Check out our openings here: https://jobs.jpmorganchase.com/ListJobs/ByCountry/IL/",
+        "contact_name": "Vicky Ilukhina",
+        "contact_email": "victoria.ilukhina@jpmorgan.com",
+        "level": 4,
+        "added": "2018-04-07T23:51:25Z",
+        "active": true,
+        "sponsor_logo": 32,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
     "model": "symposion_sponsorship.sponsorbenefit",
     "pk": 1,
     "fields": {
@@ -547,10 +589,24 @@
 },
 {
     "model": "symposion_sponsorship.sponsorbenefit",
-    "pk": 25,
+    "pk": 27,
     "fields": {
-        "sponsor": 9,
-        "benefit": 2,
+        "sponsor": 11,
+        "benefit": 4,
+        "active": true,
+        "max_words": 100,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 28,
+    "fields": {
+        "sponsor": 11,
+        "benefit": 3,
         "active": true,
         "max_words": null,
         "other_limits": "",
@@ -561,16 +617,58 @@
 },
 {
     "model": "symposion_sponsorship.sponsorbenefit",
-    "pk": 26,
+    "pk": 29,
     "fields": {
-        "sponsor": 10,
+        "sponsor": 11,
         "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "sponsor_files/Fundbox-Logo_original.png",
+        "is_complete": true
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 30,
+    "fields": {
+        "sponsor": 12,
+        "benefit": 4,
+        "active": true,
+        "max_words": 200,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 31,
+    "fields": {
+        "sponsor": 12,
+        "benefit": 3,
         "active": true,
         "max_words": null,
         "other_limits": "",
         "text": "",
         "upload": "",
         "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 32,
+    "fields": {
+        "sponsor": 12,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "sponsor_files/JPM_logo_2008_PRINT_D_Black.jpg",
+        "is_complete": true
     }
 }
 ]
