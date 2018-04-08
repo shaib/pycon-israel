@@ -62,7 +62,7 @@ class RandomSponsorNode(template.Node):
                            .order_by("level__order", "added")
                            .select_related("level")
         )
-        sponsors = [sp for sp in queryset if sp.annotation]
+        sponsors = [sp for sp in queryset]  # if sp.annotation]
         max_level = max(sp.level.order for sp in sponsors)
         # Prepare a lottery set, where smaller order means more occurrences
         lottery = sum([(max_level+1-sp.level.order)*[sp] for sp in sponsors], [])
