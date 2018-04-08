@@ -33,7 +33,7 @@
         "contact_email": "uzi.halaby.senerman@bluevine.com",
         "level": 5,
         "added": "2018-03-17T22:32:50Z",
-        "active": false,
+        "active": true,
         "sponsor_logo": 4,
         "web_logo_benefit": null,
         "print_logo_benefit": null,
@@ -222,7 +222,7 @@
         "contact_email": "iris.feinmesser@fundbox.com",
         "level": 6,
         "added": "2018-04-07T23:34:02Z",
-        "active": false,
+        "active": true,
         "sponsor_logo": 29,
         "web_logo_benefit": null,
         "print_logo_benefit": null,
@@ -238,7 +238,7 @@
         "name": "JP Morgan",
         "display_url": "",
         "external_url": "https://www.jpmorgan.com/country/IL/EN/jpmorgan",
-        "annotation": "PMorgan Chase & Co. is not only a leading global financial institution. It is also one of the world\u2019s biggest tech companies. In 14 technology hubs worldwide, our team of 40,000+ technologists design, build and deploy everything from enterprise technology initiatives to big data and mobile solutions, as well as innovations in electronic payments, cybersecurity, machine learning, and cloud development. Our $9.5B+ annual investment in technology enables us to hire people to create innovative solutions that will not only transform the financial services industry, but also change the world. \r\n \r\nWe are hiring junior and experienced Python developers for various positions in our newly-built, hi-tech hub in Herzliya. Check out our openings here: https://jobs.jpmorganchase.com/ListJobs/ByCountry/IL/",
+        "annotation": "JPMorgan Chase & Co. is not only a leading global financial institution. It is also one of the world\u2019s biggest tech companies. In 14 technology hubs worldwide, our team of 40,000+ technologists design, build and deploy everything from enterprise technology initiatives to big data and mobile solutions, as well as innovations in electronic payments, cybersecurity, machine learning, and cloud development. Our $9.5B+ annual investment in technology enables us to hire people to create innovative solutions that will not only transform the financial services industry, but also change the world. \r\n \r\nWe are hiring junior and experienced Python developers for various positions in our newly-built, hi-tech hub in Herzliya. Check out our openings here: https://jobs.jpmorganchase.com/ListJobs/ByCountry/IL/",
         "contact_name": "Vicky Ilukhina",
         "contact_email": "victoria.ilukhina@jpmorgan.com",
         "level": 4,
@@ -669,6 +669,20 @@
         "text": "",
         "upload": "sponsor_files/JPM_logo_2008_PRINT_D_Black.jpg",
         "is_complete": true
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 33,
+    "fields": {
+        "sponsor": 12,
+        "benefit": 4,
+        "active": true,
+        "max_words": 200,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
     }
 }
 ]
