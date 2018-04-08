@@ -75,8 +75,8 @@
         "contact_email": "miri@singular.net",
         "level": 5,
         "added": "2018-03-17T22:39:22Z",
-        "active": false,
-        "sponsor_logo": null,
+        "active": true,
+        "sponsor_logo": 12,
         "web_logo_benefit": null,
         "print_logo_benefit": null,
         "print_description_benefit": null,
@@ -415,8 +415,8 @@
         "max_words": null,
         "other_limits": "",
         "text": "",
-        "upload": "",
-        "is_complete": false
+        "upload": "sponsor_files/singular-flat-logo-blue.png",
+        "is_complete": true
     }
 },
 {
