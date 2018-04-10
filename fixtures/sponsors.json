@@ -12,7 +12,7 @@
         "contact_email": "dfediuck@redhat.com",
         "level": 5,
         "added": "2018-03-17T22:27:03Z",
-        "active": false,
+        "active": true,
         "sponsor_logo": 3,
         "web_logo_benefit": null,
         "print_logo_benefit": null,
@@ -49,13 +49,13 @@
         "name": "Facebook",
         "display_url": "",
         "external_url": "https://www.facebook.com/",
-        "annotation": "",
-        "contact_name": "Nicole Holloway",
-        "contact_email": "nholloway@fb.com",
+        "annotation": "Facebook's mission is to give people the power to build community and bring the world closer together. Through our family of apps and services, we're building a different kind of company that connects billions of people around the world, gives them ways to share what matters most to them, and helps bring people closer together. Whether we're creating new products or helping a small business expand its reach, people at Facebook are builders at heart. Our global teams are constantly iterating, solving problems, and working together to empower people around the world to build community and connect in meaningful ways. Together, we can help people build stronger communities \u2014 we're just getting started.",
+        "contact_name": "Mohit Malik",
+        "contact_email": "mmalik@fb.com",
         "level": 5,
         "added": "2018-03-17T22:35:00Z",
         "active": false,
-        "sponsor_logo": null,
+        "sponsor_logo": 9,
         "web_logo_benefit": null,
         "print_logo_benefit": null,
         "print_description_benefit": null,
@@ -88,15 +88,15 @@
     "pk": 5,
     "fields": {
         "applicant": 1,
-        "name": "Ravello Systems/Oracle",
+        "name": "Oracle",
         "display_url": "",
-        "external_url": "https://cloud.oracle.com/en_US/ravello",
-        "annotation": "",
-        "contact_name": "Dafna Rosenbloom",
-        "contact_email": "dafna.rosenblum@oracle.com",
+        "external_url": "https://blogs.oracle.com/oracledatacloud/crosswise-team-open-positions",
+        "annotation": "Oracle\u2019s R&D organization is comprised of engineers with passion and expertise for solving difficult problems in highly scalable environments - from distributed systems and virtualized infrastructure to big-data and probabilistic modeling. A substantial organization with an entrepreneurial fast paced mentality - we are still only just starting; with a lot of positive energy and fast decision making.\r\n\r\nIf it\u2019s in solving immense data-centric challenges like we do at Crosswise or in changing the way companies consume the public cloud like we do at Ravello, at Oracle you can design and build innovative systems from the ground up. To apply send email to ron.reiter@oracle.com.",
+        "contact_name": "Alyssa Miron",
+        "contact_email": "alyssa.miron@oracle.com",
         "level": 6,
         "added": "2018-03-17T22:44:15Z",
-        "active": false,
+        "active": true,
         "sponsor_logo": 15,
         "web_logo_benefit": null,
         "print_logo_benefit": null,
@@ -159,8 +159,8 @@
         "contact_email": "agatt@twistbioscience.com",
         "level": 4,
         "added": "2018-03-24T15:13:19Z",
-        "active": false,
-        "sponsor_logo": null,
+        "active": true,
+        "sponsor_logo": 24,
         "web_logo_benefit": null,
         "print_logo_benefit": null,
         "print_description_benefit": null,
@@ -373,8 +373,8 @@
         "max_words": null,
         "other_limits": "",
         "text": "",
-        "upload": "",
-        "is_complete": false
+        "upload": "sponsor_files/Facebook-06-2015-Blue.png",
+        "is_complete": true
     }
 },
 {
@@ -457,7 +457,7 @@
         "max_words": null,
         "other_limits": "",
         "text": "",
-        "upload": "sponsor_files/Oracle_-_logo.jpg",
+        "upload": "sponsor_files/ODC_logo_.png",
         "is_complete": true
     }
 },
@@ -578,13 +578,27 @@
     "pk": 24,
     "fields": {
         "sponsor": 8,
-        "benefit": 4,
+        "benefit": 2,
         "active": true,
         "max_words": 200,
         "other_limits": "",
         "text": "",
-        "upload": "",
-        "is_complete": false
+        "upload": "sponsor_files/Twist_landscape_for_light_background.png",
+        "is_complete": true
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 25,
+    "fields": {
+        "sponsor": 12,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "sponsor_files/Fundbox-Logo_original.png",
+        "is_complete": true
     }
 },
 {
