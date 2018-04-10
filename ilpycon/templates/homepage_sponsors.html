@@ -13,16 +13,18 @@
         <div class="col-3 sponsor-name">
           <h3>{{ sponsor_level.name }}</h3>
         </div>
-        <div class="col-9 sponsor-logos">
+        <div class="col">
+        <div class="row sponsor-logos">
         {% sponsors sponsor_level.name as level_sponsors %}
         {% for sponsor in level_sponsors %}
-          <div class="sponsor-logo">
+          <div class="col sponsor-logo">
             <a href="{{ sponsor.external_url }}" title="{{ sponsor.name }}">
               {% thumbnail sponsor.website_logo '300x300' as icon %} {# Set size according to level? #}
               <img src="{{ icon|data_uri }}" alt="{{ sponsor.name }}">
             </a>
           </div>
         {% endfor %}
+      </div>
       </div>
     </div>  
     {% endif %}  
