@@ -589,20 +589,6 @@
 },
 {
     "model": "symposion_sponsorship.sponsorbenefit",
-    "pk": 25,
-    "fields": {
-        "sponsor": 12,
-        "benefit": 2,
-        "active": true,
-        "max_words": null,
-        "other_limits": "",
-        "text": "",
-        "upload": "sponsor_files/Fundbox-Logo_original.png",
-        "is_complete": true
-    }
-},
-{
-    "model": "symposion_sponsorship.sponsorbenefit",
     "pk": 27,
     "fields": {
         "sponsor": 11,
