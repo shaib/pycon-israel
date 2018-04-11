@@ -14,6 +14,9 @@ pip install -r requirements.txt
 ./manage.py compilemessages
 ./manage.py createsuperuser --username=admin --email=admin@example.com --noinput
 ./manage.py loaddata sponsors  # db must have at least 1 user to load that
+LINKPATH=ilpycon/site_media/media/sponsor_files
+mkdir -p `dirname $LINKPATH`
+[ ! -e $LINKPATH ] && ln -s ${PWD}/static/dist/images/sponsor-logos $LINKPATH
 npm run dev
 ```
 
