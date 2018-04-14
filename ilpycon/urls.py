@@ -31,9 +31,10 @@ urlpatterns += [
     path("teams/", include("ilpycon.symposion.teams.urls")),
     path("reviews/", include("ilpycon.symposion.reviews.urls")),
     path("schedule/", include("ilpycon.symposion.schedule.urls")),
-    path(r"blog/", include("pinax.blog.urls", namespace="pinax_blog")),
-    path(r"ajax/images/", include("pinax.images.urls",
-                                   namespace="pinax_images")),
+    path("blog/", include("pinax.blog.urls", namespace="pinax_blog")),
+    path("ajax/images/", include("pinax.images.urls",
+                                 namespace="pinax_images")),
+    path("files/", include("ilpycon.dbfiles.urls")),
     path("", include("pinax.pages.urls", namespace="pinax_pages"))
 ]
 

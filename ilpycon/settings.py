@@ -157,6 +157,7 @@ INSTALLED_APPS = [
     "ilpycon",
     "ilpycon.proposals",
     "ilpycon.proxy",
+    "ilpycon.dbfiles",
 
     # Symposion
     "ilpycon.symposion",
