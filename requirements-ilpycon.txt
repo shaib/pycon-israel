@@ -14,5 +14,5 @@ Pillow
 pinax-boxes==3.0.1
 pinax-pages==0.5.0
 pytz
-pinax-blog==7.0.3
+pinax-blog==7.0.4
 pinax-images==3.0.1
