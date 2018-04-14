@@ -9,6 +9,7 @@ from django.utils.translation import ugettext_lazy as _
 
 from django.contrib.auth.models import User
 
+from ilpycon.dbfiles.storage import DBFilesStorage
 from ilpycon.symposion.markdown_parser import parse
 
 
@@ -33,7 +34,8 @@ class Speaker(models.Model):
                                                          "markdown-cheat-sheet/target='_blank'>"
                                                          "Markdown</a>."), verbose_name=_("Biography"))
     biography_html = models.TextField(blank=True)
-    photo = models.ImageField(upload_to="speaker_photos", blank=True, verbose_name=_("Photo"))
+    photo = models.ImageField(storage=DBFilesStorage(), upload_to="speaker_photos",
+                              blank=True, verbose_name=_("Photo"))
     twitter_username = models.CharField(
         max_length=15,
         blank=True,
