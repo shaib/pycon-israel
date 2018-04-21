@@ -54,7 +54,7 @@
         "contact_email": "mmalik@fb.com",
         "level": 5,
         "added": "2018-03-17T22:35:00Z",
-        "active": false,
+        "active": true,
         "sponsor_logo": 9,
         "web_logo_benefit": null,
         "print_logo_benefit": null,
