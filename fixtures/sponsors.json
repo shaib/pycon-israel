@@ -252,6 +252,27 @@
     }
 },
 {
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 13,
+    "fields": {
+        "applicant": 1,
+        "name": "Here",
+        "display_url": "",
+        "external_url": "https://mobility.here.com",
+        "annotation": "",
+        "contact_name": "Ofra Valdman",
+        "contact_email": "ofra.valdman@here.com",
+        "level": 7,
+        "added": "2018-04-30T21:48:50Z",
+        "active": true,
+        "sponsor_logo": 33,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
     "model": "symposion_sponsorship.sponsorbenefit",
     "pk": 1,
     "fields": {
@@ -668,6 +689,20 @@
         "other_limits": "",
         "text": "",
         "upload": "sponsor_files/JPM_logo_2008_PRINT_D_Black.jpg",
+        "is_complete": true
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 33,
+    "fields": {
+        "sponsor": 13,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "sponsor_files/here_logo_2.png",
         "is_complete": true
     }
 }
