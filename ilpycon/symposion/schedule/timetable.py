@@ -2,6 +2,7 @@ from __future__ import unicode_literals
 import itertools
 
 from django.db.models import Count, Min
+from django.utils import six
 
 from ilpycon.symposion.schedule.models import Room, Slot, SlotRoom
 
@@ -47,5 +48,5 @@ class TimeTable(object):
 
 def pairwise(iterable):
     a, b = itertools.tee(iterable)
-    b.next()
-    return itertools.izip_longest(a, b)
+    six.next(b, None)
+    return six.moves.zip_longest(a, b)

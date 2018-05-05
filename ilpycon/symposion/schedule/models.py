@@ -5,6 +5,7 @@ import datetime
 from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.auth.models import User
 from django.db import models
+from django.utils import six
 from django.utils.encoding import python_2_unicode_compatible
 from django.utils.translation import ugettext_lazy as _
 
@@ -147,7 +148,7 @@ class Slot(models.Model):
         return Room.objects.filter(pk__in=self.slotroom_set.values("room"))
 
     def save(self, *args, **kwargs):
-        roomlist = ' '.join(map(lambda r: r.__unicode__(), self.rooms))
+        roomlist = ' '.join(six.text_type(r) for r in self.rooms)
         self.name = "%s %s (%s - %s) %s" % (self.day, self.kind, self.start, self.end, roomlist)
         self.content_override_html = parse(self.content_override)
         super(Slot, self).save(*args, **kwargs)
