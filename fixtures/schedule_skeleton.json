@@ -1,0 +1,1515 @@
+[
+{
+    "model": "symposion_schedule.schedule",
+    "pk": 1,
+    "fields": {
+        "section": 3,
+        "published": false,
+        "hidden": false
+    }
+},
+{
+    "model": "symposion_schedule.day",
+    "pk": 1,
+    "fields": {
+        "schedule": 1,
+        "date": "2018-06-04"
+    }
+},
+{
+    "model": "symposion_schedule.day",
+    "pk": 2,
+    "fields": {
+        "schedule": 1,
+        "date": "2018-06-05"
+    }
+},
+{
+    "model": "symposion_schedule.room",
+    "pk": 1,
+    "fields": {
+        "schedule": 1,
+        "name": "Main Hall",
+        "order": 1
+    }
+},
+{
+    "model": "symposion_schedule.room",
+    "pk": 3,
+    "fields": {
+        "schedule": 1,
+        "name": "Hall 2",
+        "order": 2
+    }
+},
+{
+    "model": "symposion_schedule.room",
+    "pk": 4,
+    "fields": {
+        "schedule": 1,
+        "name": "PyData",
+        "order": 3
+    }
+},
+{
+    "model": "symposion_schedule.slotkind",
+    "pk": 1,
+    "fields": {
+        "schedule": 1,
+        "label": "Keynote"
+    }
+},
+{
+    "model": "symposion_schedule.slotkind",
+    "pk": 2,
+    "fields": {
+        "schedule": 1,
+        "label": "Presentation-30"
+    }
+},
+{
+    "model": "symposion_schedule.slotkind",
+    "pk": 3,
+    "fields": {
+        "schedule": 1,
+        "label": "Presentation-40"
+    }
+},
+{
+    "model": "symposion_schedule.slotkind",
+    "pk": 6,
+    "fields": {
+        "schedule": 1,
+        "label": "non-content"
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 1,
+    "fields": {
+        "name": "2018-06-04 Keynote (09:15:00 - 10:15:00) ",
+        "day": 1,
+        "kind": 1,
+        "start": "09:15:00",
+        "end": "10:15:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 2,
+    "fields": {
+        "name": "2018-06-04 Presentation-40 (10:20:00 - 11:00:00) Main Hall",
+        "day": 1,
+        "kind": 3,
+        "start": "10:20:00",
+        "end": "11:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 3,
+    "fields": {
+        "name": "2018-06-04 non-content (08:00:00 - 09:00:00) ",
+        "day": 1,
+        "kind": 6,
+        "start": "08:00:00",
+        "end": "09:00:00",
+        "content_override": "Registration and Mini-Breakfast",
+        "content_override_html": "<p>Registration and Mini-Breakfast</p>"
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 4,
+    "fields": {
+        "name": "2018-06-04 Keynote (09:00:00 - 09:15:00) ",
+        "day": 1,
+        "kind": 1,
+        "start": "09:00:00",
+        "end": "09:15:00",
+        "content_override": "Opening Session",
+        "content_override_html": "<p>Opening Session</p>"
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 5,
+    "fields": {
+        "name": "2018-06-04 Presentation-30 (11:00:00 - 11:30:00) Main Hall",
+        "day": 1,
+        "kind": 2,
+        "start": "11:00:00",
+        "end": "11:30:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 6,
+    "fields": {
+        "name": "2018-06-04 Presentation-30 (11:30:00 - 12:00:00) Main Hall",
+        "day": 1,
+        "kind": 2,
+        "start": "11:30:00",
+        "end": "12:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 7,
+    "fields": {
+        "name": "2018-06-04 Keynote (12:00:00 - 13:00:00) ",
+        "day": 1,
+        "kind": 1,
+        "start": "12:00:00",
+        "end": "13:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 8,
+    "fields": {
+        "name": "2018-06-04 non-content (13:00:00 - 14:00:00) ",
+        "day": 1,
+        "kind": 6,
+        "start": "13:00:00",
+        "end": "14:00:00",
+        "content_override": "Lunch",
+        "content_override_html": "<p>Lunch</p>"
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 9,
+    "fields": {
+        "name": "2018-06-04 Presentation-30 (14:00:00 - 14:30:00) Main Hall",
+        "day": 1,
+        "kind": 2,
+        "start": "14:00:00",
+        "end": "14:30:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 10,
+    "fields": {
+        "name": "2018-06-04 Presentation-30 (14:30:00 - 15:00:00) Main Hall",
+        "day": 1,
+        "kind": 2,
+        "start": "14:30:00",
+        "end": "15:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 11,
+    "fields": {
+        "name": "2018-06-04 non-content (15:00:00 - 15:30:00) ",
+        "day": 1,
+        "kind": 6,
+        "start": "15:00:00",
+        "end": "15:30:00",
+        "content_override": "Coffee Break",
+        "content_override_html": "<p>Coffee Break</p>"
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 12,
+    "fields": {
+        "name": "2018-06-04 Presentation-30 (15:30:00 - 16:00:00) Main Hall",
+        "day": 1,
+        "kind": 2,
+        "start": "15:30:00",
+        "end": "16:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 13,
+    "fields": {
+        "name": "2018-06-04 Presentation-30 (16:00:00 - 16:30:00) Main Hall",
+        "day": 1,
+        "kind": 2,
+        "start": "16:00:00",
+        "end": "16:30:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 14,
+    "fields": {
+        "name": "2018-06-04 Presentation-30 (16:30:00 - 17:00:00) Main Hall",
+        "day": 1,
+        "kind": 2,
+        "start": "16:30:00",
+        "end": "17:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 15,
+    "fields": {
+        "name": "2018-06-05 Keynote (16:30:00 - 17:00:00) Main Hall",
+        "day": 2,
+        "kind": 1,
+        "start": "16:30:00",
+        "end": "17:00:00",
+        "content_override": "Closing Session",
+        "content_override_html": "<p>Closing Session</p>"
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 16,
+    "fields": {
+        "name": "2018-06-04 Presentation-40 (10:20:00 - 11:00:00) Hall 2",
+        "day": 1,
+        "kind": 3,
+        "start": "10:20:00",
+        "end": "11:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 17,
+    "fields": {
+        "name": "2018-06-04 Presentation-40 (10:20:00 - 11:00:00) PyData",
+        "day": 1,
+        "kind": 3,
+        "start": "10:20:00",
+        "end": "11:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 18,
+    "fields": {
+        "name": "2018-06-04 Presentation-30 (11:00:00 - 11:30:00) Hall 2",
+        "day": 1,
+        "kind": 2,
+        "start": "11:00:00",
+        "end": "11:30:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 19,
+    "fields": {
+        "name": "2018-06-04 Presentation-30 (11:00:00 - 11:30:00) PyData",
+        "day": 1,
+        "kind": 2,
+        "start": "11:00:00",
+        "end": "11:30:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 20,
+    "fields": {
+        "name": "2018-06-04 Presentation-30 (11:30:00 - 12:00:00) Hall 2",
+        "day": 1,
+        "kind": 2,
+        "start": "11:30:00",
+        "end": "12:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 21,
+    "fields": {
+        "name": "2018-06-04 Presentation-30 (11:30:00 - 12:00:00) PyData",
+        "day": 1,
+        "kind": 2,
+        "start": "11:30:00",
+        "end": "12:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 22,
+    "fields": {
+        "name": "2018-06-04 Presentation-30 (14:00:00 - 14:30:00) Hall 2",
+        "day": 1,
+        "kind": 2,
+        "start": "14:00:00",
+        "end": "14:30:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 23,
+    "fields": {
+        "name": "2018-06-04 Presentation-30 (14:00:00 - 14:30:00) PyData",
+        "day": 1,
+        "kind": 2,
+        "start": "14:00:00",
+        "end": "14:30:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 24,
+    "fields": {
+        "name": "2018-06-04 Presentation-30 (14:30:00 - 15:00:00) Hall 2",
+        "day": 1,
+        "kind": 2,
+        "start": "14:30:00",
+        "end": "15:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 25,
+    "fields": {
+        "name": "2018-06-04 Presentation-30 (14:30:00 - 15:00:00) PyData",
+        "day": 1,
+        "kind": 2,
+        "start": "14:30:00",
+        "end": "15:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 26,
+    "fields": {
+        "name": "2018-06-04 Presentation-30 (15:30:00 - 16:00:00) Hall 2",
+        "day": 1,
+        "kind": 2,
+        "start": "15:30:00",
+        "end": "16:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 27,
+    "fields": {
+        "name": "2018-06-04 Presentation-30 (15:30:00 - 16:00:00) PyData",
+        "day": 1,
+        "kind": 2,
+        "start": "15:30:00",
+        "end": "16:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 28,
+    "fields": {
+        "name": "2018-06-04 Presentation-30 (16:00:00 - 16:30:00) Hall 2",
+        "day": 1,
+        "kind": 2,
+        "start": "16:00:00",
+        "end": "16:30:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 29,
+    "fields": {
+        "name": "2018-06-04 Presentation-30 (16:00:00 - 16:30:00) PyData",
+        "day": 1,
+        "kind": 2,
+        "start": "16:00:00",
+        "end": "16:30:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 30,
+    "fields": {
+        "name": "2018-06-04 Presentation-30 (16:30:00 - 17:00:00) Hall 2",
+        "day": 1,
+        "kind": 2,
+        "start": "16:30:00",
+        "end": "17:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 31,
+    "fields": {
+        "name": "2018-06-04 Presentation-30 (16:30:00 - 17:00:00) PyData",
+        "day": 1,
+        "kind": 2,
+        "start": "16:30:00",
+        "end": "17:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 62,
+    "fields": {
+        "name": "2018-06-05 non-content (08:00:00 - 09:00:00) ",
+        "day": 2,
+        "kind": 6,
+        "start": "08:00:00",
+        "end": "09:00:00",
+        "content_override": "Registration and Mini-Breakfast",
+        "content_override_html": "<p>Registration and Mini-Breakfast</p>"
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 63,
+    "fields": {
+        "name": "2018-06-05 Keynote (09:00:00 - 09:15:00) Main Hall",
+        "day": 2,
+        "kind": 1,
+        "start": "09:00:00",
+        "end": "09:15:00",
+        "content_override": "Opening Session",
+        "content_override_html": "<p>Opening Session</p>"
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 64,
+    "fields": {
+        "name": "2018-06-05 Keynote (09:15:00 - 10:15:00) Main Hall",
+        "day": 2,
+        "kind": 1,
+        "start": "09:15:00",
+        "end": "10:15:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 65,
+    "fields": {
+        "name": "2018-06-05 Presentation-40 (10:20:00 - 11:00:00) Main Hall",
+        "day": 2,
+        "kind": 3,
+        "start": "10:20:00",
+        "end": "11:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 66,
+    "fields": {
+        "name": "2018-06-05 Presentation-40 (10:20:00 - 11:00:00) Hall 2",
+        "day": 2,
+        "kind": 3,
+        "start": "10:20:00",
+        "end": "11:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 67,
+    "fields": {
+        "name": "2018-06-05 Presentation-40 (10:20:00 - 11:00:00) PyData",
+        "day": 2,
+        "kind": 3,
+        "start": "10:20:00",
+        "end": "11:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 68,
+    "fields": {
+        "name": "2018-06-05 Presentation-30 (11:00:00 - 11:30:00) Main Hall",
+        "day": 2,
+        "kind": 2,
+        "start": "11:00:00",
+        "end": "11:30:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 69,
+    "fields": {
+        "name": "2018-06-05 Presentation-30 (11:00:00 - 11:30:00) Hall 2",
+        "day": 2,
+        "kind": 2,
+        "start": "11:00:00",
+        "end": "11:30:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 70,
+    "fields": {
+        "name": "2018-06-05 Presentation-30 (11:00:00 - 11:30:00) PyData",
+        "day": 2,
+        "kind": 2,
+        "start": "11:00:00",
+        "end": "11:30:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 71,
+    "fields": {
+        "name": "2018-06-05 Presentation-30 (11:30:00 - 12:00:00) Main Hall",
+        "day": 2,
+        "kind": 2,
+        "start": "11:30:00",
+        "end": "12:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 72,
+    "fields": {
+        "name": "2018-06-05 Presentation-30 (11:30:00 - 12:00:00) Hall 2",
+        "day": 2,
+        "kind": 2,
+        "start": "11:30:00",
+        "end": "12:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 73,
+    "fields": {
+        "name": "2018-06-05 Presentation-30 (11:30:00 - 12:00:00) PyData",
+        "day": 2,
+        "kind": 2,
+        "start": "11:30:00",
+        "end": "12:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 74,
+    "fields": {
+        "name": "2018-06-05 Keynote (12:00:00 - 13:00:00) Main Hall",
+        "day": 2,
+        "kind": 1,
+        "start": "12:00:00",
+        "end": "13:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 75,
+    "fields": {
+        "name": "2018-06-05 non-content (13:00:00 - 14:00:00) ",
+        "day": 2,
+        "kind": 6,
+        "start": "13:00:00",
+        "end": "14:00:00",
+        "content_override": "Lunch",
+        "content_override_html": "<p>Lunch</p>"
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 76,
+    "fields": {
+        "name": "2018-06-05 Presentation-30 (14:00:00 - 14:30:00) Main Hall",
+        "day": 2,
+        "kind": 2,
+        "start": "14:00:00",
+        "end": "14:30:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 77,
+    "fields": {
+        "name": "2018-06-05 Presentation-30 (14:00:00 - 14:30:00) Hall 2",
+        "day": 2,
+        "kind": 2,
+        "start": "14:00:00",
+        "end": "14:30:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 78,
+    "fields": {
+        "name": "2018-06-05 Presentation-30 (14:00:00 - 14:30:00) PyData",
+        "day": 2,
+        "kind": 2,
+        "start": "14:00:00",
+        "end": "14:30:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 79,
+    "fields": {
+        "name": "2018-06-05 Presentation-30 (14:30:00 - 15:00:00) Main Hall",
+        "day": 2,
+        "kind": 2,
+        "start": "14:30:00",
+        "end": "15:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 80,
+    "fields": {
+        "name": "2018-06-05 Presentation-30 (14:30:00 - 15:00:00) Hall 2",
+        "day": 2,
+        "kind": 2,
+        "start": "14:30:00",
+        "end": "15:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 81,
+    "fields": {
+        "name": "2018-06-05 Presentation-30 (14:30:00 - 15:00:00) PyData",
+        "day": 2,
+        "kind": 2,
+        "start": "14:30:00",
+        "end": "15:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 82,
+    "fields": {
+        "name": "2018-06-05 non-content (15:00:00 - 15:30:00) ",
+        "day": 2,
+        "kind": 6,
+        "start": "15:00:00",
+        "end": "15:30:00",
+        "content_override": "Coffee Break",
+        "content_override_html": "<p>Coffee Break</p>"
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 83,
+    "fields": {
+        "name": "2018-06-05 Presentation-30 (15:30:00 - 16:00:00) Main Hall",
+        "day": 2,
+        "kind": 2,
+        "start": "15:30:00",
+        "end": "16:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 84,
+    "fields": {
+        "name": "2018-06-05 Presentation-30 (15:30:00 - 16:00:00) Hall 2",
+        "day": 2,
+        "kind": 2,
+        "start": "15:30:00",
+        "end": "16:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 85,
+    "fields": {
+        "name": "2018-06-05 Presentation-30 (15:30:00 - 16:00:00) PyData",
+        "day": 2,
+        "kind": 2,
+        "start": "15:30:00",
+        "end": "16:00:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 86,
+    "fields": {
+        "name": "2018-06-05 Presentation-30 (16:00:00 - 16:30:00) Main Hall",
+        "day": 2,
+        "kind": 2,
+        "start": "16:00:00",
+        "end": "16:30:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 87,
+    "fields": {
+        "name": "2018-06-05 Presentation-30 (16:00:00 - 16:30:00) Hall 2",
+        "day": 2,
+        "kind": 2,
+        "start": "16:00:00",
+        "end": "16:30:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slot",
+    "pk": 88,
+    "fields": {
+        "name": "2018-06-05 Presentation-30 (16:00:00 - 16:30:00) PyData",
+        "day": 2,
+        "kind": 2,
+        "start": "16:00:00",
+        "end": "16:30:00",
+        "content_override": "",
+        "content_override_html": ""
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 5,
+    "fields": {
+        "slot": 1,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 12,
+    "fields": {
+        "slot": 7,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 28,
+    "fields": {
+        "slot": 4,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 29,
+    "fields": {
+        "slot": 15,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 30,
+    "fields": {
+        "slot": 2,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 31,
+    "fields": {
+        "slot": 16,
+        "room": 3
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 32,
+    "fields": {
+        "slot": 17,
+        "room": 4
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 33,
+    "fields": {
+        "slot": 5,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 34,
+    "fields": {
+        "slot": 18,
+        "room": 3
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 35,
+    "fields": {
+        "slot": 19,
+        "room": 4
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 36,
+    "fields": {
+        "slot": 6,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 37,
+    "fields": {
+        "slot": 20,
+        "room": 3
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 38,
+    "fields": {
+        "slot": 21,
+        "room": 4
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 39,
+    "fields": {
+        "slot": 9,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 40,
+    "fields": {
+        "slot": 22,
+        "room": 3
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 41,
+    "fields": {
+        "slot": 23,
+        "room": 4
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 42,
+    "fields": {
+        "slot": 10,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 43,
+    "fields": {
+        "slot": 24,
+        "room": 3
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 44,
+    "fields": {
+        "slot": 25,
+        "room": 4
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 45,
+    "fields": {
+        "slot": 12,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 46,
+    "fields": {
+        "slot": 26,
+        "room": 3
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 47,
+    "fields": {
+        "slot": 27,
+        "room": 4
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 48,
+    "fields": {
+        "slot": 13,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 49,
+    "fields": {
+        "slot": 28,
+        "room": 3
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 50,
+    "fields": {
+        "slot": 29,
+        "room": 4
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 51,
+    "fields": {
+        "slot": 14,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 52,
+    "fields": {
+        "slot": 30,
+        "room": 3
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 53,
+    "fields": {
+        "slot": 31,
+        "room": 4
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 54,
+    "fields": {
+        "slot": 63,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 55,
+    "fields": {
+        "slot": 64,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 56,
+    "fields": {
+        "slot": 65,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 57,
+    "fields": {
+        "slot": 66,
+        "room": 3
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 58,
+    "fields": {
+        "slot": 67,
+        "room": 4
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 59,
+    "fields": {
+        "slot": 68,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 60,
+    "fields": {
+        "slot": 69,
+        "room": 3
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 61,
+    "fields": {
+        "slot": 70,
+        "room": 4
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 62,
+    "fields": {
+        "slot": 71,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 63,
+    "fields": {
+        "slot": 72,
+        "room": 3
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 64,
+    "fields": {
+        "slot": 73,
+        "room": 4
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 65,
+    "fields": {
+        "slot": 74,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 66,
+    "fields": {
+        "slot": 76,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 67,
+    "fields": {
+        "slot": 77,
+        "room": 3
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 68,
+    "fields": {
+        "slot": 78,
+        "room": 4
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 69,
+    "fields": {
+        "slot": 79,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 70,
+    "fields": {
+        "slot": 80,
+        "room": 3
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 71,
+    "fields": {
+        "slot": 81,
+        "room": 4
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 72,
+    "fields": {
+        "slot": 83,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 73,
+    "fields": {
+        "slot": 84,
+        "room": 3
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 74,
+    "fields": {
+        "slot": 85,
+        "room": 4
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 75,
+    "fields": {
+        "slot": 86,
+        "room": 1
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 76,
+    "fields": {
+        "slot": 87,
+        "room": 3
+    }
+},
+{
+    "model": "symposion_schedule.slotroom",
+    "pk": 77,
+    "fields": {
+        "slot": 88,
+        "room": 4
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 1,
+    "fields": {
+        "day": 1,
+        "slots": [
+            4,
+            1
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 2,
+    "fields": {
+        "day": 1,
+        "slots": [
+            2,
+            5,
+            6
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 3,
+    "fields": {
+        "day": 1,
+        "slots": [
+            16,
+            18,
+            20
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 4,
+    "fields": {
+        "day": 1,
+        "slots": [
+            17,
+            19,
+            21
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 5,
+    "fields": {
+        "day": 1,
+        "slots": [
+            7
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 6,
+    "fields": {
+        "day": 1,
+        "slots": [
+            9,
+            10
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 7,
+    "fields": {
+        "day": 1,
+        "slots": [
+            22,
+            24
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 8,
+    "fields": {
+        "day": 1,
+        "slots": [
+            23,
+            25
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 9,
+    "fields": {
+        "day": 1,
+        "slots": [
+            12,
+            13,
+            14
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 10,
+    "fields": {
+        "day": 1,
+        "slots": [
+            26,
+            28,
+            30
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 11,
+    "fields": {
+        "day": 1,
+        "slots": [
+            27,
+            29,
+            31
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 12,
+    "fields": {
+        "day": 2,
+        "slots": [
+            63,
+            64
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 13,
+    "fields": {
+        "day": 2,
+        "slots": [
+            65,
+            68,
+            71
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 14,
+    "fields": {
+        "day": 2,
+        "slots": [
+            66,
+            69,
+            72
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 15,
+    "fields": {
+        "day": 2,
+        "slots": [
+            67,
+            70,
+            73
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 16,
+    "fields": {
+        "day": 2,
+        "slots": [
+            74
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 17,
+    "fields": {
+        "day": 2,
+        "slots": [
+            76,
+            79
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 18,
+    "fields": {
+        "day": 2,
+        "slots": [
+            77,
+            80
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 19,
+    "fields": {
+        "day": 2,
+        "slots": [
+            78,
+            81
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 20,
+    "fields": {
+        "day": 2,
+        "slots": [
+            83,
+            86
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 21,
+    "fields": {
+        "day": 2,
+        "slots": [
+            84,
+            87
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 22,
+    "fields": {
+        "day": 2,
+        "slots": [
+            85,
+            88
+        ]
+    }
+},
+{
+    "model": "symposion_schedule.session",
+    "pk": 23,
+    "fields": {
+        "day": 2,
+        "slots": [
+            15
+        ]
+    }
+}
+]

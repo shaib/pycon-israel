@@ -3,6 +3,7 @@ import itertools
 
 from django.db.models import Count, Min
 from django.utils import six
+from django.utils.functional import cached_property
 
 from ilpycon.symposion.schedule.models import Room, Slot, SlotRoom
 
@@ -17,6 +18,7 @@ class TimeTable(object):
         qs = qs.filter(day=self.day)
         return qs
 
+    @cached_property
     def rooms(self):
         qs = Room.objects.all()
         qs = qs.filter(schedule=self.day.schedule)
@@ -24,6 +26,10 @@ class TimeTable(object):
             pk__in=SlotRoom.objects.filter(slot__in=self.slots_qs().values("pk")).values("room"))
         qs = qs.order_by("order")
         return qs
+
+    @property
+    def room_count(self):
+        return len(self.rooms)
 
     def __iter__(self):
         times = sorted(set(itertools.chain(*self.slots_qs().values_list("start", "end"))))
@@ -36,7 +42,7 @@ class TimeTable(object):
             for slot in slots:
                 if slot.start == time:
                     slot.rowspan = TimeTable.rowspan(times, slot.start, slot.end)
-                    slot.colspan = slot.room_count
+                    slot.colspan = slot.room_count or self.room_count # no rooms means all-conf
                     row["slots"].append(slot)
             if row["slots"] or next_time is None:
                 yield row

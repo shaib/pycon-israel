@@ -88,8 +88,8 @@ class Slot(models.Model):
     kind = models.ForeignKey(SlotKind, verbose_name=_("Kind"), on_delete=models.CASCADE)
     start = models.TimeField(verbose_name=_("Start"))
     end = models.TimeField(verbose_name=_("End"))
-    content_override = models.TextField(blank=True, verbose_name=_("Content override"))
-    content_override_html = models.TextField(blank=True)
+    content_override = models.TextField(blank=True, verbose_name=_("Content override"), help_text="Markdown")
+    content_override_html = models.TextField(blank=True, editable=False)
 
     def assign(self, content):
         """
