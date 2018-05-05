@@ -79,6 +79,8 @@ STATICFILES_DIRS = [
 ]
 
 STATICFILES_STORAGE = "django.contrib.staticfiles.storage.ManifestStaticFilesStorage"
+# If we want to store static on S3, do not change to S3Boto3Storage, instead look at:
+#  https://www.caktusgroup.com/blog/2014/11/10/Using-Amazon-S3-to-store-your-Django-sites-static-and-media-files/#configuring-django-media-to-use-s3
 
 # List of finder classes that know how to find static files in
 # various locations.
@@ -157,6 +159,7 @@ INSTALLED_APPS = [
     "sitetree",
     "taggit",
     "timezones",
+    "storages",
 
     # project
     "ilpycon",
@@ -244,6 +247,24 @@ PROPOSAL_FORMS = {
     "tutorial": "ilpycon.proposals.forms.TutorialProposalForm",
     "talk": "ilpycon.proposals.forms.TalkProposalForm",
 }
+
+# Config S3 storage for uploaded files
+s3_bucket_name = os.environ.get("S3_BUCKET_NAME")  # name acc. to https://devcenter.heroku.com/articles/s3#bucket
+if s3_bucket_name:
+    DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+    AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID', '')
+    AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY', '')
+    AWS_STORAGE_BUCKET_NAME = s3_bucket_name
+    AWS_REGION_NAME = os.environ.get('AWS_REGION_NAME', 'eu-west-1')
+    AWS_LOCATION = os.environ.get('AWS_LOCATION', 'test-sitemedia')
+    AWS_S3_SIGNATURE_VERSION = 's3v4'
+    AWS_QUERYSTRING_AUTH = False
+    #AWS_S3_OBJECT_PARAMETERS = {
+    #    'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+    #    'CacheControl': 'max-age=94608000',
+    #}
+
+# Heroku stuff
 
 import django_heroku
 django_heroku.settings(locals())

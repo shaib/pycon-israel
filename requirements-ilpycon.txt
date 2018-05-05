@@ -1,9 +1,11 @@
 django-heroku
+django-storages
 django-model-utils
 django-sitetree
 django-taggit
 django-timezone-field
 django-timezones
+boto3
 easy-thumbnails
 gunicorn
 html5lib
