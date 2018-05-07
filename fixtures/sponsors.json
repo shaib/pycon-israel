@@ -130,16 +130,16 @@
     "pk": 7,
     "fields": {
         "applicant": 1,
-        "name": "Seematics",
+        "name": "Allegro",
         "display_url": "",
-        "external_url": "http://www.seematics.com/",
-        "annotation": "",
+        "external_url": "http://www.allegro.ai/",
+        "annotation": "Allegro.ai is a pioneering deep learning computer vision platform that\r\nprovides a complete product lifecycle management solution for AI\r\ndevelopment & production, starting with computer vision. The company\u2019s\r\nplatform simplifies the process of developing and managing deep learning\r\npowered solutions - such as for autonomous vehicles, robotics, security\r\ncameras, logistics and others.\r\n\r\nFor more information, visit http://www.allegro.ai.",
         "contact_name": "Gil Westrich",
         "contact_email": "g@seematics.com",
         "level": 6,
         "added": "2018-03-17T23:23:40Z",
-        "active": false,
-        "sponsor_logo": null,
+        "active": true,
+        "sponsor_logo": 21,
         "web_logo_benefit": null,
         "print_logo_benefit": null,
         "print_description_benefit": null,
@@ -562,8 +562,8 @@
         "max_words": null,
         "other_limits": "",
         "text": "",
-        "upload": "",
-        "is_complete": false
+        "upload": "sponsor_files/allegro-black.jpg",
+        "is_complete": true
     }
 },
 {
