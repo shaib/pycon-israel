@@ -2,6 +2,7 @@ from __future__ import unicode_literals
 import csv
 
 from django.http import HttpResponse
+from django.utils import six
 from django.utils.translation import ugettext_lazy as _
 
 
@@ -25,13 +26,13 @@ def export_as_csv_action(description=None, fields=None, exclude=None,
             excludeset = set(exclude)
             field_names = field_names - excludeset
         response = HttpResponse(content_type="text/csv")
-        response["Content-Disposition"] = "attachment; filename=%s.csv" % unicode(opts).replace(".", "_")
+        response["Content-Disposition"] = "attachment; filename=%s.csv" % six.text_type(opts).replace(".", "_")
         writer = csv.writer(response)
         if header:
             writer.writerow(list(field_names))
         for obj in queryset:
             writer.writerow(
-                [unicode(getattr(obj, field)).encode("utf-8", "replace") for field in field_names])
+                [six.text_type(getattr(obj, field)).encode("utf-8", "replace") for field in field_names])
         return response
     if description is None:
         description = _("Export selected objects as CSV file")
