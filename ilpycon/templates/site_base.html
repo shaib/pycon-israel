@@ -107,6 +107,7 @@
 
 {% block scripts %}
     <script src="{% static "js/site.js" %}"></script>
+    {% block extra_script %}{% endblock %}
 {% endblock %}
 
 {% block extra_body_base %}
