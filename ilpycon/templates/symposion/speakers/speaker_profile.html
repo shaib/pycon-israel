@@ -10,7 +10,8 @@
     <div class="row">
         <div class="col-md-2">
             {% if speaker.photo %}
-                <img src="{% thumbnail speaker.photo '128x128' %}" alt="{{ speaker.name }}" />
+                {% thumbnail speaker.photo '128x128' as photo %}
+                <img src="{{ photo|data_uri }}" alt="{{ speaker.name }}" />
             {% else %}
                 &nbsp;
             {% endif %}
