@@ -27,5 +27,5 @@
 
     <h3>Abstract</h3>
 
-    <div class="abstract">{{ presentation.abstract|safe }}</div>
+    <div class="abstract"><bdi>{{ presentation.abstract_html|safe }}</bdi></div>
 {% endblock %}
