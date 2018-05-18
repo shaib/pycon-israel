@@ -839,38 +839,6 @@
 },
 {
     "model": "symposion_schedule.slotroom",
-    "pk": 5,
-    "fields": {
-        "slot": 1,
-        "room": 1
-    }
-},
-{
-    "model": "symposion_schedule.slotroom",
-    "pk": 12,
-    "fields": {
-        "slot": 7,
-        "room": 1
-    }
-},
-{
-    "model": "symposion_schedule.slotroom",
-    "pk": 28,
-    "fields": {
-        "slot": 4,
-        "room": 1
-    }
-},
-{
-    "model": "symposion_schedule.slotroom",
-    "pk": 29,
-    "fields": {
-        "slot": 15,
-        "room": 1
-    }
-},
-{
-    "model": "symposion_schedule.slotroom",
     "pk": 30,
     "fields": {
         "slot": 2,
@@ -1063,22 +1031,6 @@
 },
 {
     "model": "symposion_schedule.slotroom",
-    "pk": 54,
-    "fields": {
-        "slot": 63,
-        "room": 1
-    }
-},
-{
-    "model": "symposion_schedule.slotroom",
-    "pk": 55,
-    "fields": {
-        "slot": 64,
-        "room": 1
-    }
-},
-{
-    "model": "symposion_schedule.slotroom",
     "pk": 56,
     "fields": {
         "slot": 65,
@@ -1147,14 +1099,6 @@
     "fields": {
         "slot": 73,
         "room": 4
-    }
-},
-{
-    "model": "symposion_schedule.slotroom",
-    "pk": 65,
-    "fields": {
-        "slot": 74,
-        "room": 1
     }
 },
 {
