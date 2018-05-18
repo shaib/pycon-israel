@@ -28,7 +28,7 @@
         "name": "BlueVine",
         "display_url": "",
         "external_url": "https://www.bluevine.com/",
-        "annotation": "",
+        "annotation": "We started with a simple goal: to help small and medium-sized businesses with their everyday funding needs, whether it\u2019s to plug unexpected cash flow gaps, or to take on a business opportunity that will help them grow. Our mission is to offer convenient and flexible access to working capital, without lengthy applications, hidden fees or long-term contracts.\r\nOur team reflects our strategy: we move fast, focus on building simple solutions, and push boundaries as we work and learn together. \r\nAs a result BlueVine has come a long way in just three years. Our factoring and business line of credit solutions have helped thousands of entrepreneurs. We\u2019ve provided more than $250 million in working capital funding to date, and we\u2019re on track to fund over $500 million in 2017 alone proving that helping others grow their businesses is a good way to grow our business as well.\r\nIn addition to the many clients who have joined us on our journey we have also earned the backing of leading investors, including Lightspeed Venture Partners, Menlo Ventures, 83North, Rakuten Fintech Fund and Citi Ventures, the venture investing arm of Citigroup who combined have invested more than $100M to help us achieve our goal together.",
         "contact_name": "Uzi Halaby Senerman",
         "contact_email": "uzi.halaby.senerman@bluevine.com",
         "level": 5,
@@ -154,7 +154,7 @@
         "name": "Twist BioScience",
         "display_url": "",
         "external_url": "https://twistbioscience.com/",
-        "annotation": "",
+        "annotation": "We are Twist Bioscience and we make DNA. Yes, the DNA that makes up all living organisms. We are leading the innovation in DNA synthesis technology, providing the products that are changing the world for the better. Our customers in medicine, agriculture, industrial chemicals, and even data storage use our synthetic DNA products to develop revolutionary ways to create cures for cancer, and other diseases, as well as materials that help protect the environment and our planet.\r\n\r\nIn our Software R&D Center in Tel Aviv we are building the SW IDE framework, i.e. the software tools that enable genetic engineers to design and edit biological code and develop better bio-based products, faster and cheaper.\r\n\r\nWe are a fast-growing startup, that has raised $260M, with a portfolio of global customers who are some of the biggest biotech companies. Our unique innovation is in how we combine advanced technology along with biochemistry, molecular biology, and software engineering. \r\nIf you are a SW developer or manager looking for a unique challenge and an unparalleled opportunity, we invite you to get in touch today.",
         "contact_name": "Aviva Gatt",
         "contact_email": "agatt@twistbioscience.com",
         "level": 4,
@@ -266,6 +266,27 @@
         "added": "2018-04-30T21:48:50Z",
         "active": true,
         "sponsor_logo": 33,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 14,
+    "fields": {
+        "applicant": 1,
+        "name": "Aplitools",
+        "display_url": "",
+        "external_url": "https://applitools.com/?utm_source=PyCon-Israel-2018",
+        "annotation": "Applitools is the creator of Application Visual Management (AVM) to help companies release, test and monitor flawless mobile, web, and native apps in a fully automated way.\r\nFounded in 2013, Applitools uses sophisticated AI-powered image processing technology to ensure that an application appears correctly and functions properly on all mobile devices, browsers, operating systems and screen sizes.\r\nApplitools has customers from a range of verticals, including Fortune-100 companies in software, banking, online retail, insurance, and pharmaceuticals.\r\nApplitools is headquartered in San Mateo, California, with an R&D center in Tel Aviv, Israel. For more information, please visit applitools.com.",
+        "contact_name": "Daniel Puterman",
+        "contact_email": "daniel.puterman@applitools.com",
+        "level": 6,
+        "added": "2018-05-18T14:31:21Z",
+        "active": false,
+        "sponsor_logo": 34,
         "web_logo_benefit": null,
         "print_logo_benefit": null,
         "print_description_benefit": null,
@@ -520,7 +541,7 @@
         "max_words": null,
         "other_limits": "",
         "text": "",
-        "upload": "sponsor_files/via-logo.png",
+        "upload": "sponsor_files/Via-logo-Horizontal.png",
         "is_complete": true
     }
 },
@@ -703,6 +724,20 @@
         "other_limits": "",
         "text": "",
         "upload": "sponsor_files/here_logo_2.png",
+        "is_complete": true
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 34,
+    "fields": {
+        "sponsor": 14,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "sponsor_files/aplitools.png",
         "is_complete": true
     }
 }
