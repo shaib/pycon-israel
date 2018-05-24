@@ -277,7 +277,7 @@
     "pk": 14,
     "fields": {
         "applicant": 1,
-        "name": "Aplitools",
+        "name": "Applitools",
         "display_url": "",
         "external_url": "https://applitools.com/?utm_source=PyCon-Israel-2018",
         "annotation": "Applitools is the creator of Application Visual Management (AVM) to help companies release, test and monitor flawless mobile, web, and native apps in a fully automated way.\r\nFounded in 2013, Applitools uses sophisticated AI-powered image processing technology to ensure that an application appears correctly and functions properly on all mobile devices, browsers, operating systems and screen sizes.\r\nApplitools has customers from a range of verticals, including Fortune-100 companies in software, banking, online retail, insurance, and pharmaceuticals.\r\nApplitools is headquartered in San Mateo, California, with an R&D center in Tel Aviv, Israel. For more information, please visit applitools.com.",
@@ -285,7 +285,7 @@
         "contact_email": "daniel.puterman@applitools.com",
         "level": 6,
         "added": "2018-05-18T14:31:21Z",
-        "active": false,
+        "active": true,
         "sponsor_logo": 34,
         "web_logo_benefit": null,
         "print_logo_benefit": null,
@@ -758,7 +758,7 @@
         "max_words": null,
         "other_limits": "",
         "text": "",
-        "upload": "sponsor_files/aplitools.png",
+        "upload": "sponsor_files/applitools-logo-cropped.png",
         "is_complete": true
     }
 },
