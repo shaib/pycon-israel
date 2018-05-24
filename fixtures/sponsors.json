@@ -7,7 +7,7 @@
         "name": "Red Hat",
         "display_url": "",
         "external_url": "https://www.redhat.com/",
-        "annotation": "Red Hat is the world’s leading provider of open source software solutions, using a community-powered approach to reliable and high-performing cloud, Linux, middleware, storage and virtualization technologies. Red Hat also offers award-winning support, training, and consulting services. As a connective hub in a global network of enterprises, partners, and open source communities, Red Hat helps create relevant, innovative technologies that liberate resources for growth and prepare customers for the future of IT. Learn more at http://www.redhat.com.",
+        "annotation": "Red Hat is the world\u2019s leading provider of open source software solutions, using a community-powered approach to reliable and high-performing cloud, Linux, middleware, storage and virtualization technologies. Red Hat also offers award-winning support, training, and consulting services. As a connective hub in a global network of enterprises, partners, and open source communities, Red Hat helps create relevant, innovative technologies that liberate resources for growth and prepare customers for the future of IT. Learn more at http://www.redhat.com.",
         "contact_name": "Doron Fediuck",
         "contact_email": "dfediuck@redhat.com",
         "level": 5,
@@ -287,6 +287,27 @@
         "added": "2018-05-18T14:31:21Z",
         "active": false,
         "sponsor_logo": 34,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 15,
+    "fields": {
+        "applicant": 139,
+        "name": "Microsoft",
+        "display_url": "",
+        "external_url": "https://www.microsoft.com/",
+        "annotation": "",
+        "contact_name": "Danial Puterman",
+        "contact_email": "dputer@gmail.com",
+        "level": 6,
+        "added": "2018-05-24T09:55:17Z",
+        "active": true,
+        "sponsor_logo": 39,
         "web_logo_benefit": null,
         "print_logo_benefit": null,
         "print_description_benefit": null,
@@ -738,6 +759,62 @@
         "other_limits": "",
         "text": "",
         "upload": "sponsor_files/aplitools.png",
+        "is_complete": true
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 35,
+    "fields": {
+        "sponsor": 14,
+        "benefit": 3,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 37,
+    "fields": {
+        "sponsor": 15,
+        "benefit": 4,
+        "active": true,
+        "max_words": 100,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 38,
+    "fields": {
+        "sponsor": 15,
+        "benefit": 3,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "",
+        "is_complete": false
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 39,
+    "fields": {
+        "sponsor": 15,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "sponsor_files/MSFT_logo_rgb_C-Gray_D_cropped.png",
         "is_complete": true
     }
 }
