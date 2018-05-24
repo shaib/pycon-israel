@@ -297,7 +297,7 @@
     "model": "symposion_sponsorship.sponsor",
     "pk": 15,
     "fields": {
-        "applicant": 139,
+        "applicant": 1,
         "name": "Microsoft",
         "display_url": "",
         "external_url": "https://www.microsoft.com/",
