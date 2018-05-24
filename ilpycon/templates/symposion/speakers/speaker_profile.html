@@ -22,7 +22,9 @@
             {% endif %}
             <h1>{{ speaker.name }}</h1>
             <div class="bio"><bdi>{{ speaker.biography_html|safe }}</bdi></div>
-
+            {% if speaker.twitter_username %}
+                <p>Twitter: <a href="https://twitter.com/{{ speaker.twitter_username }}">@{{ speaker.twitter_username }}</a></p>
+            {% endif %}
             <h2>Presentations</h2>
             {% for presentation in presentations %}
                 <h3><a href="{% url "schedule_presentation_detail" presentation.pk %}">{{ presentation.title }}</a></h3>
