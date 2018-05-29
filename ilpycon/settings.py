@@ -217,7 +217,7 @@ FIXTURE_DIRS = [
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
-HIDE_ACCOUNT_BAR = True
+HIDE_ACCOUNT_BAR = False
 
 ACCOUNT_OPEN_SIGNUP = False
 ACCOUNT_EMAIL_UNIQUE = True
