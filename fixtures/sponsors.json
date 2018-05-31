@@ -315,6 +315,27 @@
     }
 },
 {
+    "model": "symposion_sponsorship.sponsor",
+    "pk": 16,
+    "fields": {
+        "applicant": 1,
+        "name": "Otonomo",
+        "display_url": "",
+        "external_url": "http://otonomo.io",
+        "annotation": "Otonomo is the first neutral automotive data services platform that paves the way for the development of new apps and services for drivers, passengers, municipalities, and transportation companies. Our platform ingests automotive data from multiple sources, including OEMs and other data providers. It secures, cleanses, normalizes, aggregates, and enriches it with third-party datasets in order to meet consumers\u2019 privacy expectations, manage compliance, and maximize its value through our global Marketplace. There are over 75 partners in our ecosystem whose goal is to provide services such as preventive maintenance, public safety, parking, on-demand fueling, in-vehicle delivery, smart city, and other services.",
+        "contact_name": "Hagit Tenne-Pereg",
+        "contact_email": "hagit@otonomo.io",
+        "level": 6,
+        "added": "2018-05-31T18:44:13Z",
+        "active": true,
+        "sponsor_logo": 40,
+        "web_logo_benefit": null,
+        "print_logo_benefit": null,
+        "print_description_benefit": null,
+        "company_description_benefit": null
+    }
+},
+{
     "model": "symposion_sponsorship.sponsorbenefit",
     "pk": 1,
     "fields": {
@@ -815,6 +836,20 @@
         "other_limits": "",
         "text": "",
         "upload": "sponsor_files/MSFT_logo_rgb_C-Gray_D_cropped.png",
+        "is_complete": true
+    }
+},
+{
+    "model": "symposion_sponsorship.sponsorbenefit",
+    "pk": 40,
+    "fields": {
+        "sponsor": 16,
+        "benefit": 2,
+        "active": true,
+        "max_words": null,
+        "other_limits": "",
+        "text": "",
+        "upload": "sponsor_files/otonomo-logo.eps.png",
         "is_complete": true
     }
 }
