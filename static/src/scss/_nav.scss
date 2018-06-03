@@ -78,3 +78,8 @@ nav.page-navigation {
     margin-left: 10px;
   }
 }
+
+/* Workaround odd presentation artifact */
+#navbarSupportedContent form.navbar-nav {
+	margin-top: inherit;
+}
